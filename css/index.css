@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f8f5f2;
+	}
+
+	.card{
+		box-shadow: 4px 9px 22px 0px rgba(0,0,0,0.3);
+	   -webkit-box-shadow: 4px 9px 22px 0px rgba(0,0,0,0.3);
+	   -moz-box-shadow: 4px 9px 22px 0px rgba(0,0,0,0.3);
+	   border-radius: 15px;
+	}
+
+	.card-img{
+		border: none;
+		background-color: #f8f5f2;
+	}
+
+	.header-title{
+		background-color: #C5AC97;
+	}
+
+	.title-login{
+		color: #ffffff;
+	}
+
+	.font-weight-light{
+		color: #6D5B4B;
+		font-size: 50px;
+	}
+	.text-title{
+		color: #6D5B4B
+	}
+	.btn-submit{
+		background-color: #DBCBBE;
+		color: #ffffff;
+		width: 250px;
+	}
+
+	.btn-submit:hover{
+		background-color: #C5AC97;
+		color: #ffffff;
+	}
+
+	.card-footer{
+		background-color: #C5AC97;
+	}
+
+	.text-dark{
+		font-size: 10px;
+	}
+
+	 .h6-footer{
+	    font-size: 12px;
+	    color: #c5ac97;
+	  }
