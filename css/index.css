@@ -5,55 +5,53 @@
 body{
 	font-family: 'Montserrat', sans-serif;
 	background-color: #f8f5f2;
-	}
+}
 
-	.card{
-		box-shadow: 4px 9px 22px 0px rgba(0,0,0,0.3);
-	   -webkit-box-shadow: 4px 9px 22px 0px rgba(0,0,0,0.3);
-	   -moz-box-shadow: 4px 9px 22px 0px rgba(0,0,0,0.3);
-	   border-radius: 15px;
-	}
+.bxs-user-circle{
+	font-size: 30px;
+	color: #6d5b4b;
+}
 
-	.card-img{
-		border: none;
-		background-color: #f8f5f2;
-	}
+.bx-edit{
+	font-size: 30px;
+	color: #6d5b4b;
+}
 
-	.header-title{
-		background-color: #C5AC97;
-	}
+.card{
+	box-shadow: 10px 10px 14px -8px rgba(0,0,0,0.43);
+-webkit-box-shadow: 10px 10px 14px -8px rgba(0,0,0,0.43);
+-moz-box-shadow: 10px 10px 14px -8px rgba(0,0,0,0.43);
+}
 
-	.title-login{
-		color: #ffffff;
-	}
+.header-title{
+	background-color: #dbcbbe;
+}
 
-	.font-weight-light{
-		color: #6D5B4B;
-		font-size: 50px;
-	}
-	.text-title{
-		color: #6D5B4B
-	}
-	.btn-submit{
-		background-color: #DBCBBE;
-		color: #ffffff;
-		width: 250px;
-	}
+.title-login{
+	color: #6d5b4b;
+	font-size: 25px;
+}
 
-	.btn-submit:hover{
-		background-color: #C5AC97;
-		color: #ffffff;
-	}
+.text-title{
+	color: #6d5b4b;
+}
 
-	.card-footer{
-		background-color: #C5AC97;
-	}
+.btn-submit{
+	background-color: #dbcbbe;
+	color: #ffff;
+	width: 50%;
+}
 
-	.text-dark{
-		font-size: 10px;
-	}
+.btn-submit:hover{
+	background-color: #6d5d4b;
+	color: #ffff;
+}
 
-	 .h6-footer{
-	    font-size: 12px;
-	    color: #c5ac97;
-	  }
+.card-footer{
+	background-color: #dbcbbe;
+}
+
+.h6-footer{
+	font-size: 10px;
+	color: #dbcbbe;
+}
