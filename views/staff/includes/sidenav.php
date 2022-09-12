@@ -29,21 +29,21 @@
        <span class="tooltip">Marriage</span>
      </li>
      <li>
-       <a href="#">
+       <a href="confirmation.php">
          <i class='bx bx-file' ></i>
          <span class="links_name">Confirmation</span>
        </a>
        <span class="tooltip">Confirmation</span>
      </li>
      <li>
-       <a href="#">
+       <a href="request.php">
          <i class='bx bxs-edit-alt' ></i>
          <span class="links_name">Request</span>
        </a>
        <span class="tooltip">Request</span>
      </li>
      <li>
-       <a href="#">
+       <a href="members.php">
          <i class='bx bxs-group' ></i>
          <span class="links_name">Members</span>
        </a>

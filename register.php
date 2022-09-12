@@ -35,13 +35,20 @@
 				  <div class="card-body">
 				    <form>
 				    	<div class="row mt-3">
-						  <div class="col form-group">
+						  <div class="form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Full Name</label>
 						    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
 						  </div>
-						  <div class="col form-group">
+					  	</div>
+
+					  	<div class="row mt-3">
+					  	  <div class="col form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Date of Birth</label>
 						    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
+						  </div>
+						  <div class="col form-group">
+						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Contact Number</label>
+						    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter active contact no." required>
 						  </div>
 					  	</div>
 
@@ -49,10 +56,6 @@
 						  <div class="form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Address</label>
 						    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Current Address" required>
-						  </div>
-						  <div class="form-group">
-						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Contact Number</label>
-						    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter active contact no." required>
 						  </div>
 					  	</div>
 
