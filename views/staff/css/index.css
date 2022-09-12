@@ -21,7 +21,7 @@ body{
 .btn-announcement{
 	color: #ffff;
 	background-color: #6d5b4b;
-	border-radius: 10px;
+	border-radius: 10px !important;
 }
 
 .btn-announcement:hover{
@@ -48,30 +48,43 @@ body{
 
 .bx-reset{
 	font-size: 20px;
-	color: #ffff;
+	color: #858280;
 }
 
 .btn-update{
+	background-color: transparent;
+	border-bottom: 1px solid #32cd32;
+}
+.btn-update:hover{
 	background-color: #32cd32;
+	border-radius: 90px;
 }
 
 .bxs-printer{
 	font-size: 20px;
-	color: #ffff;
+	color: #858280;
 }
 
 .btn-print{
-	background-color: #1261a0;
+	background-color: transparent;
+	border-bottom: 1px solid #7DF9FF;
+}
+
+.btn-print:hover{
+	background-color: #7DF9FF;
+	border-bottom: 1px solid #7DF9FF;
+	border-radius: 90px;
 }
 
 .dropdown-filter-year{
-	background-color: #6d5b4b;
+	background-color: #c5ac97;
 	color: #ffff;
+	border: 1px solid black;
 	border-radius: 10px;
 }
 
 .btn-create-baptismal{
-	background-color: #6d5b4b;
+	background-color: #c5ac97;
 	color: #ffff;
 	border-radius: 10px;
 }
@@ -116,6 +129,50 @@ body{
 .marriage-form-footer{
 	background-color: #ffff;
 	border: none;
+}
+
+/*request*/
+
+.filter-status{
+	background-color: #c5ac97;
+	color: #ffff;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+.badge-pending{
+	background-color: #ff0000;
+}
+.badge-processing{
+	background-color: #fafa33;
+	color: #000000;
+}
+.badge-done{
+	background-color: #32cd32;
+}
+.bxs-check-circle{
+	font-size: 25px;
+	color: #858280;
+}
+.btn-confirm{
+	background-color: transparent;
+	border-bottom: 1px solid black;
+}
+.btn-confirm:hover{
+	background-color: #6d5d4b;
+	border-radius: 90px;
+}
+
+/*members*/
+
+.btn-enable{
+	background-color: #32cd32;
+	color: #ffff;
+	font-size: 12px;
+}
+.btn-disable{
+	background-color: #ff0000;
+	color: #ffff;
+	font-size: 12px;
 }
 
 /*modal*/

@@ -29,7 +29,7 @@
     	<div class="col">
 	      	<div class="card card-banner">
 	        	<div class="card-body">
-	          	<h5 class="banner-title d-flex justify-content-center">Manage Baptismal</h5>
+	          	<h5 class="banner-title d-flex justify-content-center">Manage Confirmation</h5>
 	        	</div>
 	      	</div>
     	</div>
@@ -51,7 +51,7 @@
 	  </div>
 
 	  <div class="col d-flex justify-content-end">
-	    <button type="button" class="btn btn-create-baptismal mr-3" data-toggle="modal" data-target="#createBaptismal">Create Baptismal</button>
+	    <button type="button" class="btn btn-create-baptismal mr-3" data-toggle="modal" data-target="#createConfirmation">Create Confirmation</button>
 	  </div>
 	</div>  
 	
@@ -80,7 +80,7 @@
 							<p>Sponsor2</p>
 						</td>
 						<td>
-							<button class="btn btn-update" data-toggle="modal" data-target="#updateBaptismal" data-toggle="tooltip" data-placement="top" title="U P D A T E">
+							<button class="btn btn-update" data-toggle="modal" data-target="#updateConfirmation" data-toggle="tooltip" data-placement="top" title="U P D A T E" >
 								<i class='bx bx-reset' ></i>
 							</button>
 							<button class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
