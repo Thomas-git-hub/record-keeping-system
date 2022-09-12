@@ -38,7 +38,7 @@
                             <a class="nav-link" href="index.php">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link register" href="">Register</a>
+                            <a class="nav-link register" href="register.php">Register</a>
                         </li>
                     </ul>
                 </div>
