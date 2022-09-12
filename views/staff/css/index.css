@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	}
+
+.card-banner{
+	background: #6d5b4b !important;
+	box-shadow: none;
+	border: none;
+}
+
+.banner-title{
+	font-size: 50px;
+	font-weight: lighter;
+	color: #ffff;
+}
+
+.btn-announcement{
+	color: #ffff;
+	background-color: #6d5b4b;
+	border-radius: 10px;
+}
+
+.btn-announcement:hover{
+	color: #262626;
+	background-color: #ffff;
+	border: 1px solid #6d5b4b;
+}
+
+.card{
+	border-radius: 10px;
+
+}
+
+.card-header{
+	background-color: #858280 !important;
+	color: #ffff;
+}
+
+.card-content{
+	font-size: 50px;
+	color: #6d5b4b;
+	font-weight: bold;
+}
+
+.bx-reset{
+	font-size: 20px;
+	color: #ffff;
+}
+
+.btn-update{
+	background-color: #32cd32;
+}
+
+.bxs-printer{
+	font-size: 20px;
+	color: #ffff;
+}
+
+.btn-print{
+	background-color: #1261a0;
+}
+
+.dropdown-filter-year{
+	background-color: #6d5b4b;
+	color: #ffff;
+	border-radius: 10px;
+}
+
+.btn-create-baptismal{
+	background-color: #6d5b4b;
+	color: #ffff;
+	border-radius: 10px;
+}
+
+.btn-create-baptismal:hover{
+	background-color: #ffff;
+	border: 1px solid #6d5b4b;
+}
+
+/*marriage css*/
+.bx-arrow-back{
+	color: #dbcbbe !important;
+	font-size: 45px !important;
+	margin-left: 50px !important;
+}
+.bx-arrow-back:hover{
+	color: #858280 !important;
+	font-size: 45px !important;
+	margin-left: 50px !important;
+}
+
+.row-border{
+	border-bottom: 1px solid #dbcbbe;
+	margin-bottom: 15px;
+}
+
+.col-5{
+	border-left: 1px solid #dbcbbe;
+}
+
+.btn-form-submit{
+	background-color: #dbcbbe;
+	color: #ffff;
+	width: 50%;
+}
+
+.btn-form-submit:hover{
+	background-color: #6d5b4b;
+	color: #ffff;
+}
+
+.marriage-form-footer{
+	background-color: #ffff;
+	border: none;
+}
+
+/*modal*/
+
+.modal-header{
+	background-color: #f8f5f2;
+}
+
+.modal-title{
+	color: #6d5b4b;
+}
+
+.modal-btn-baptismal{
+	background-color: #dbcbbe;
+	color: #ffff;
+}
+
+.modal-btn-baptismal:hover{
+	background-color: #6d5b4b;
+	color: #ffff;
+}
