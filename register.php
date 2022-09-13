@@ -24,7 +24,17 @@
 	<?php include_once("includes/navbar.php") ?>
 
 	<div class="container">
-
+	<!-- start alert message -->
+	<?php
+		if(isset($_GET['passwordnotmatch'])) {
+	?>
+		<div class="alert alert-secondary" role="alert">
+			The password you enter do not match. Please try again.
+		</div>
+	<?php
+		}
+	?>
+	<!-- end of alert message -->
 		<div class="row">
 			<div class="col d-flex justify-content-center mt-4">
 				<div class="card" style="width: 60rem;">
@@ -33,52 +43,52 @@
 				    <h5 class="text-uppercase title-login">R E G I S T R A T I O N</h5>
 				  </div>
 				  <div class="card-body">
-				    <form>
+				    <form action="includes/func.php" method="POST">
 				    	<div class="row mt-3">
 						  <div class="form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Full Name</label>
-						    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
+						    <input type="text" name="fullName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
 						  </div>
 					  	</div>
 
 					  	<div class="row mt-3">
 					  	  <div class="col form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Date of Birth</label>
-						    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
+						    <input type="date" name="bday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
 						  </div>
 						  <div class="col form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Contact Number</label>
-						    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter active contact no." required>
+						    <input type="text" name="contNum" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter active contact no." required>
 						  </div>
 					  	</div>
 
 					  	<div class="row mt-3">
 						  <div class="form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Address</label>
-						    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Current Address" required>
+						    <input type="text" name="address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Current Address" required>
 						  </div>
 					  	</div>
 
 					  	<div class="row mt-3">
 					  		<div class="form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Email Address</label>
-						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Use Email as Username" required>
+						    <input type="email" name="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Use Email as Username" required>
 						  </div>
 					  	</div>
 
 					  	<div class="row mt-3">
 						  <div class="col form-group">
 						    <label for="exampleInputPassword1" class="d-flex justify-content-center text-title mt-3">Password</label>
-						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+						    <input type="password" name="pwd" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
 						  </div>
 						  <div class="col form-group">
 						    <label for="exampleInputPassword1" class="d-flex justify-content-center text-title mt-3">Confirm Password</label>
-						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-type Password" required>
+						    <input type="password" name="confirm" class="form-control" id="exampleInputPassword1" placeholder="Re-type Password" required>
 						  </div>	
 					  	</div>
 
 					  <div class="d-flex justify-content-center mt-4">
-					  <button type="submit" class="btn btn-submit">Submit</button>
+					  <button type="submit" name="register" class="btn btn-submit">Submit</button>
 					  </div>
 					</form>
 
