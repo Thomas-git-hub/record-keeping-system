@@ -29,30 +29,22 @@
     	<div class="col">
 	      	<div class="card card-banner">
 	        	<div class="card-body">
-	          	<h5 class="banner-title d-flex justify-content-center">Manage Baptismal</h5>
+	          	<h5 class="banner-title d-flex justify-content-center">Request Items</h5>
 	        	</div>
 	      	</div>
     	</div>
   	</div>
 
-	<div class="row mt-5 mb-3">
-	  <div class="col d-flex justify-content-start ml-3">
+	<div class="row mt-5 mb-2">
+	  <div class="col d-flex justify-content-end ml-3">
 	  	<div class="dropdown">
-		  	<select class="form-select dropdown-filter-year mb-3"  name="Filter Year"  required>
-	            <option selected="true" disabled="disabled">Filter Year</option>
-	            <option value="2022">2022</option>
-	            <option value="2021">2021</option>
-	            <option value="2020">2020</option>
-	            <option value="2019">2019</option>
-	            <option value="2018">2018</option>
-	            <option value="2017">2017</option>
+		  	<select class="form-select filter-status mb-2"  name="Filter Year"  required>
+	            <option selected="true" disabled="disabled">Filter Status</option>
+	            <option value="Pending">Pending</option>
+	            <option value="Processing">Processing</option>
+	            <option value="Done">Done</option>
 	        </select>
 	     </div>
-	  </div>
-
-	  <div class="col d-flex justify-content-end">
-	    <button type="button" class="btn btn-create-baptismal mr-3" data-toggle="modal" data-target="#createBaptismal">Create Baptismal</button>
-	    <button type="button" class="btn btn-generate-report mr-3 mx-3" id="" data-toggle="tooltip" data-placement="left" title="Generate Report"><i class='bx bxs-file-pdf'></i></button>
 	  </div>
 	</div>  
 	
@@ -61,43 +53,69 @@
 		        <thead>
 		            <tr>
 		                <th>Name</th>
-		                <th>Fathers Name</th>
-		                <th>Mothers Name</th>
-		                <th>Birthdate</th>
+		                <th>Date of Request</th>
+		                <th>Type of Request</th>
+		                <th>Description</th>
 		                <th>Year of Baptism</th>
-		                <th>Sponsors Name</th>
+		                <th>Status</th>
 		                <th>Action</th>
 		            </tr>
 		        </thead>
 		        <tbody>
 		            <tr>
 		            	<td>John Doe</td>
-		                <td>Nixxon Doe</td>
-		                <td>Haley Doe</td>
-		                <td>09/12/1999</td>
-		                <td>11/12/2000</td>
+		                <td>09/12/2022</td>
+		                <td>Baptismal</td>
+		                <td>test message</td>
+		                <td>01/26/2017</td>
 		                <td>
-							<p>Sponsor1</p>
-							<p>Sponsor2</p>
+		                	<span class="badge badge-pending">Pending</span>
 						</td>
 						<td>
-							<button class="btn btn-update" data-toggle="modal" data-target="#updateBaptismal" data-toggle="tooltip" data-placement="top" title="U P D A T E">
-								<i class='bx bx-reset' ></i>
+							<button class="btn btn-confirm" data-toggle="tooltip" data-placement="top" title="C O N F I R M">
+								<i class='bx bxs-check-circle'></i>
 							</button>
-							<button class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
-								<i class='bx bxs-printer' ></i>
-							</button>
+						</td>
+		            </tr>
+		            <tr>
+		            	<td>John Doe</td>
+		                <td>09/12/2022</td>
+		                <td>Baptismal</td>
+		                <td>test message</td>
+		                <td>01/26/2017</td>
+		                <td>
+		                	<span class="badge badge-processing">Processing</span>
+						</td>
+						<td>
+							<!-- <button class="btn btn-confirm" data-toggle="tooltip" data-placement="top" title="C O N F I R M">
+								<i class='bx bxs-check-circle'></i>
+							</button> -->
+						</td>
+		            </tr>
+		            <tr>
+		            	<td>John Doe</td>
+		                <td>09/12/2022</td>
+		                <td>Baptismal</td>
+		                <td>test message</td>
+		                <td>01/26/2017</td>
+		                <td>
+		                	<span class="badge badge-done">Done</span>
+						</td>
+						<td>
+							<!-- <button class="btn btn-confirm" data-toggle="tooltip" data-placement="top" title="C O N F I R M">
+								<i class='bx bxs-check-circle'></i>
+							</button> -->
 						</td>
 		            </tr>
 		        </tbody>
 		        <tfoot>
 		            <tr>
 		                <th>Name</th>
-		                <th>Fathers Name</th>
-		                <th>Mothers Name</th>
-		                <th>Birthdate</th>
+		                <th>Date of Request</th>
+		                <th>Type of Request</th>
+		                <th>Description</th>
 		                <th>Year of Baptism</th>
-		                <th>Sponsors Name</th>
+		                <th>Status</th>
 		                <th>Action</th>
 		            </tr>
 		        </tfoot>

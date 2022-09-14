@@ -29,63 +29,40 @@
     	<div class="col">
 	      	<div class="card card-banner">
 	        	<div class="card-body">
-	          	<h5 class="banner-title d-flex justify-content-center">Manage Baptismal</h5>
+	          	<h5 class="banner-title d-flex justify-content-center">List of Members</h5>
 	        	</div>
 	      	</div>
     	</div>
-  	</div>
-
-	<div class="row mt-5 mb-3">
-	  <div class="col d-flex justify-content-start ml-3">
-	  	<div class="dropdown">
-		  	<select class="form-select dropdown-filter-year mb-3"  name="Filter Year"  required>
-	            <option selected="true" disabled="disabled">Filter Year</option>
-	            <option value="2022">2022</option>
-	            <option value="2021">2021</option>
-	            <option value="2020">2020</option>
-	            <option value="2019">2019</option>
-	            <option value="2018">2018</option>
-	            <option value="2017">2017</option>
-	        </select>
-	     </div>
-	  </div>
-
-	  <div class="col d-flex justify-content-end">
-	    <button type="button" class="btn btn-create-baptismal mr-3" data-toggle="modal" data-target="#createBaptismal">Create Baptismal</button>
-	    <button type="button" class="btn btn-generate-report mr-3 mx-3" id="" data-toggle="tooltip" data-placement="left" title="Generate Report"><i class='bx bxs-file-pdf'></i></button>
-	  </div>
-	</div>  
+  	</div> 
 	
 		<div class="row table">
 			<table id="datatable" class="table display" >
 		        <thead>
 		            <tr>
 		                <th>Name</th>
-		                <th>Fathers Name</th>
-		                <th>Mothers Name</th>
-		                <th>Birthdate</th>
-		                <th>Year of Baptism</th>
-		                <th>Sponsors Name</th>
+		                <th>Date of Birth</th>
+		                <th>Address</th>
+		                <th>Contact No.</th>
+		                <th>Email Address</th>
+		                <th>User Name</th>
 		                <th>Action</th>
 		            </tr>
 		        </thead>
 		        <tbody>
 		            <tr>
 		            	<td>John Doe</td>
-		                <td>Nixxon Doe</td>
-		                <td>Haley Doe</td>
-		                <td>09/12/1999</td>
-		                <td>11/12/2000</td>
-		                <td>
-							<p>Sponsor1</p>
-							<p>Sponsor2</p>
-						</td>
+		                <td>09/12/2015</td>
+		                <td>Polangui Albay</td>
+		                <td>09123456789</td>
+		                <td>email@gmail.com</td>
+		                <td>username@gmail.com</td>
 						<td>
-							<button class="btn btn-update" data-toggle="modal" data-target="#updateBaptismal" data-toggle="tooltip" data-placement="top" title="U P D A T E">
-								<i class='bx bx-reset' ></i>
+							<!-- switch to boy, di ako marunong mag palit palit neto pag enable/disable eh -->
+							<button class="btn btn-enable" data-toggle="tooltip" data-placement="top" title="C O N F I R M">
+								Enable
 							</button>
-							<button class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
-								<i class='bx bxs-printer' ></i>
+							<button class="btn btn-disable" data-toggle="tooltip" data-placement="top" title="C O N F I R M">
+								Disable
 							</button>
 						</td>
 		            </tr>
@@ -93,11 +70,11 @@
 		        <tfoot>
 		            <tr>
 		                <th>Name</th>
-		                <th>Fathers Name</th>
-		                <th>Mothers Name</th>
-		                <th>Birthdate</th>
-		                <th>Year of Baptism</th>
-		                <th>Sponsors Name</th>
+		                <th>Date of Birth</th>
+		                <th>Address</th>
+		                <th>Contact No.</th>
+		                <th>Email Address</th>
+		                <th>User Name</th>
 		                <th>Action</th>
 		            </tr>
 		        </tfoot>
