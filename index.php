@@ -32,6 +32,7 @@
 				  <div class="card-header header-title d-flex justify-content-center">
 				  	<i class='bx bxs-user-circle mr-5'></i>
 				    <h5 class="text-uppercase title-login">L O G I N</h5>
+				    <h5 class="text-uppercase title-login">L O G I N</h5>
 				  </div>
 				  <div class="card-body">
 				    <form>
