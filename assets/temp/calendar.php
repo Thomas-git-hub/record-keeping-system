@@ -16,6 +16,8 @@
   <link rel="stylesheet" type="text/css" href="../../css/calendar.css">
   
   <script>
+
+   
   $(document).ready(function() {
    var calendar = $('#calendar').fullCalendar({
     editable:true,
@@ -29,7 +31,8 @@
     selectHelper:true,
     select: function(start, end, allDay)
     {
-     var title = prompt("Enter Event Title");
+    $('#createEvent').modal('show');
+     // var title = prompt("Enter Event Title");
      if(title)
      {
       var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
@@ -82,22 +85,12 @@
      });
     },
 
-    eventClick:function(event)
+    eventClick:function(eventsent)
     {
-     if(confirm("Are you sure you want to remove it?"))
-     {
-      var id = event.id;
-      $.ajax({
-       url:"delete.php",
-       type:"POST",
-       data:{id:id},
-       success:function()
-       {
-        calendar.fullCalendar('refetchEvents');
-        alert("Event Removed");
-       }
-      })
-     }
+      $('#titleEvent').val(event.title);
+      $('#date').val(event.start);
+      // $('#desc').val(info.event.extendedProps.description);
+     $('#createEvent').modal('show');
     },
 
    });
@@ -109,6 +102,47 @@
   <!-- <h1 align="center" class="calendar-title mt-3">Calendar</h1> -->
 
    <div id="calendar"></div>
+
+
+<!-- modal -->
+
+<!-- CREATE NEW EVENTS MODAL -->
+
+<div class="modal fade" id="createEvent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input type="" class="form-control" id="titleEvent" aria-describedby="emailHelp" placeholder="Title of Announcement" required>
+            </div>
+            <div class="form-group mt-2">
+              <label for="exampleInputPassword1">Date</label>
+              <input type="" class="form-control" id="date" placeholder="" required>
+            </div>
+            <div class="form-group mt-2">
+              <label for="exampleInputPassword1">Description</label>
+              <textarea class="form-control" id="desc" rows="3"></textarea>
+            </div>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="submit" class="btn modal-btn-baptismal">Create Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+   
 
 
  </body>
