@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -23,6 +23,8 @@
 
 	<?php include_once("includes/navbar.php") ?>
 
+	<?php include_once("includes/navbar.php") ?>
+
 	<div class="container">
 	<!-- start alert message -->
 	<?php
@@ -34,20 +36,24 @@
 	<?php
 		}
 	?>
+
+		
 	<!-- end of alert message -->
 		<div class="row">
 			<div class="col d-flex justify-content-center mt-4">
 				<div class="card" style="width: 60rem;">
-				  <div class="card-header header-title d-flex justify-content-center">
-				  	<i class='bx bx-edit mr-5' ></i>
-				    <h5 class="text-uppercase title-login">R E G I S T R A T I O N</h5>
+				  <div class="card-header header-title">
+				  <div class="d-flex flex-column">
+				  	<i class='bx bx-edit d-flex justify-content-center mr-5' ></i>
+				    <h5 class="text-uppercase title-login d-flex justify-content-center">R E G I S T R A T I O N</h5>
+				  </div>
 				  </div>
 				  <div class="card-body">
-				    <form action="includes/func.php" method="POST">
+				    <form action="includes/func.php" method="POST" id="formRegister">
 				    	<div class="row mt-3">
 						  <div class="form-group">
-						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Full Name</label>
-						    <input type="text" name="fullName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" required>
+						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Name</label>
+						    <input type="text" name="fullName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First, Middle, Last" required>
 						  </div>
 					  	</div>
 
@@ -58,32 +64,33 @@
 						  </div>
 						  <div class="col form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Contact Number</label>
-						    <input type="text" name="contNum" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter active contact no." required>
+						    <input type="text" name="contNum" class="form-control" id="contactNumber" aria-describedby="emailHelp" placeholder="ex. 09-" pattern="[0-9]*" required>
 						  </div>
 					  	</div>
 
 					  	<div class="row mt-3">
 						  <div class="form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Address</label>
-						    <input type="text" name="address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Current Address" required>
+						    <input type="text" name="address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Street, City/Municipal, Province" required>
 						  </div>
 					  	</div>
 
 					  	<div class="row mt-3">
 					  		<div class="form-group">
 						    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Email Address</label>
-						    <input type="email" name="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Use Email as Username" required>
+						    <input type="email" name="email"  class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Use Email as Username" required>
 						  </div>
 					  	</div>
 
 					  	<div class="row mt-3">
 						  <div class="col form-group">
 						    <label for="exampleInputPassword1" class="d-flex justify-content-center text-title mt-3">Password</label>
-						    <input type="password" name="pwd" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+						    <input type="password" name="pwd" class="form-control" id="pass" placeholder="Password" required>
 						  </div>
 						  <div class="col form-group">
 						    <label for="exampleInputPassword1" class="d-flex justify-content-center text-title mt-3">Confirm Password</label>
-						    <input type="password" name="confirm" class="form-control" id="exampleInputPassword1" placeholder="Re-type Password" required>
+						    <input type="password" name="confirm" class="form-control" id="confirmPassword" placeholder="Re-type Password" required>
+						    <span id="messageUpd"></span>
 						  </div>	
 					  	</div>
 
@@ -129,8 +136,6 @@
 	</div>
 
 </div>
-
-
 
 </body>
 </html>

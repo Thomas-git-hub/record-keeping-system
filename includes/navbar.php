@@ -24,7 +24,7 @@
             <nav class="navbar navbar-expand-lg navbar-light head__custom-nav">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="assets/png/church-logo.png">
-                    <span style="color: #6d5b4b;">Saints Peter and Paul Parish Record Management System</span>
+                    <span style="color: #6d5b4b;">Saints Peter and Paul Parish</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span><img src="assets/icons/burger_icon.png" alt=""></span>

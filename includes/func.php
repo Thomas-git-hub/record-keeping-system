@@ -41,7 +41,7 @@
       } 
     }else{
       //if registration failed alert message will appear
-      header("Location: ../register.php?passwordnotmatch");
+      header("Location: ../register.php?passwordnotmatch"); 
     }
   }
 

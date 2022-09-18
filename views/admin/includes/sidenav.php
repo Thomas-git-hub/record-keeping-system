@@ -15,6 +15,13 @@
        <span class="tooltip">Dashboard</span>
      </li>
      <li>
+       <a href="office-staff.php">
+       <i class='bx bxs-user-plus'></i>
+         <span class="links_name">Office Staff</span>
+       </a>
+       <span class="tooltip">Office Staff</span>
+     </li>
+     <!-- <li>
        <a href="baptismal.php">
        <i class='bx bxs-baby-carriage' ></i>
          <span class="links_name">Baptismal</span>
@@ -34,14 +41,7 @@
          <span class="links_name">Confirmation</span>
        </a>
        <span class="tooltip">Confirmation</span>
-     </li>
-     <li>
-       <a href="request.php">
-         <i class='bx bxs-edit-alt' ></i>
-         <span class="links_name">Request</span>
-       </a>
-       <span class="tooltip">Request</span>
-     </li>
+     </li> -->
      <li>
        <a href="members.php">
          <i class='bx bxs-group' ></i>

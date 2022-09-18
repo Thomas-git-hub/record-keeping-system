@@ -51,7 +51,7 @@
 	  </div>
 
 	  <div class="col d-flex justify-content-end">
-	    <button type="button" class="btn btn-create-baptismal mr-3" data-toggle="modal" data-target="#createBaptismal">Create Baptismal</button>
+	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="document.location='http://localhost/record-keeping-system/views/staff/baptismal-form.php'">Create Baptismal</button>
 	    <button type="button" class="btn btn-generate-report mr-3 mx-3" id="" data-toggle="tooltip" data-placement="left" title="Generate Report"><i class='bx bxs-file-pdf'></i></button>
 	  </div>
 	</div>  

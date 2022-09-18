@@ -33,42 +33,51 @@
 	<?php
 		}
 	?>
-		<div class="row">
-			<div class="col d-flex justify-content-center mt-5">
-				<div class="card mt-5" style="width: 40rem;">
-				  <div class="card-header header-title d-flex justify-content-center">
-				  	<i class='bx bxs-user-circle mr-5'></i>
-				    <h5 class="text-uppercase title-login">L O G I N</h5>
-				  </div>
-				  <div class="card-body">
-				    <form action="includes/func.php" method="POST">
-							<div class="form-group">
-								<label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Username or Email</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" required>
-
-							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword1" class="d-flex justify-content-center text-title mt-3">Password</label>
-								<input type="password" name="pwd" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-							</div>
-
-							<div class="d-flex justify-content-center mt-3">
-								<button type="submit" name="login" class="btn btn-submit">Enter</button>
-							</div>
-						</form>
-					</div>
-
-				  	<div class="card-footer">
-				  		<div class="row">
-				  			<div class="col d-flex justify-content-center">
-					    		<img src="assets/png/bu-logo.png" style="width: 6%;">&nbsp;&nbsp;
-					    		<img src="assets/png/bupc-logo.png" style="width: 6%;">&nbsp;&nbsp;
-					    		<img src="assets/png/church-logo.png" style="width: 6%;">&nbsp;&nbsp;
-					    	</div>
-					    </div>
-					</div>
-				</div>
+	
+	<div class="row">
+		<div class="col d-flex justify-content-center">
+			<div class="card bg-dark text-white mt-3">
+			  <img class="card-img" src="assets/img/church-banner2.jpg" alt="Card image">
+			  <div class="card-img-overlay">
+			  	<h5 class="card-title d-flex justify-content-center" style="font-size: 30px;">Saints Peter & Paul Parish Record Keeping System</h5>
+			  	<h3 class="login-header-title d-flex justify-content-center mt-3">L O G I N</h3>
+			  </div>
+			  <div class="card-img-overlay  d-flex align-items-center">
+			    <div class="row">
+			  		<div class="col-4 mt-3">
+			  			<a class="select-login-card" href="login/member-login.php">
+			  			<div class="card login-card">
+			  			<i class='bx bxs-user-circle d-flex justify-content-center mt-1'></i>
+						  <div class="card-body d-flex justify-content-center">
+						    <h5 class="card-title login-card-title">Login as Member</h5>
+						  </div>
+						</div>
+						</a>
+			  		</div>
+			  		<div class="col-4 mt-3">
+			  			<a class="select-login-card" href="login/office-staff-login.php">
+			  			<div class="card login-card">
+			  			<i class='bx bx-user-circle d-flex justify-content-center mt-1'></i>
+						  <div class="card-body d-flex justify-content-center">
+						    <h5 class="card-title login-card-title">Login as Office Staff</h5>
+						  </div>
+						</div>
+						</a>
+			  		</div>
+			  		<div class="col-4 mt-3">
+			  			<a class="select-login-card" href="login/admin-login.php">
+			  			<div class="card login-card">
+			  			<i class='bx bxs-user d-flex justify-content-center mt-1'></i>
+						  <div class="card-body d-flex justify-content-center">
+						    <h5 class="card-title login-card-title">Login as Admin</h5>
+						  </div>
+						</div>
+						</a>
+			  		</div>
+			  	</div>
+			  </div>
 			</div>
+		</div>
 	</div>
 
 	<div class="row mt-5">

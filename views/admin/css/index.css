@@ -46,6 +46,10 @@ body{
 	font-weight: bold;
 }
 
+.bxs-user-plus{
+	font-size: 30px;
+}
+
 .bx-reset{
 	font-size: 20px;
 	color: #858280;
@@ -56,8 +60,9 @@ body{
 	border-bottom: 1px solid #32cd32;
 }
 .btn-update:hover{
-	background-color: #32cd32;
+	/*background-color: #32cd32;*/
 	border-radius: 90px;
+	border: 1px solid #32cd32;
 }
 
 .bxs-printer{
@@ -67,12 +72,13 @@ body{
 
 .btn-print{
 	background-color: transparent;
-	border-bottom: 1px solid #7DF9FF;
+	border-bottom: 1px solid #3895d3;
 }
 
 .btn-print:hover{
-	background-color: #7DF9FF;
-	border-bottom: 1px solid #7DF9FF;
+	/*background-color: #7DF9FF;*/
+	/*border-bottom: 1px solid #7DF9FF;*/
+	border: 1px solid #3895d3;
 	border-radius: 90px;
 }
 
