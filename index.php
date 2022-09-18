@@ -24,6 +24,7 @@
 	<?php include_once("includes/navbar.php") ?>
 
 	<div class="container">
+<<<<<<< HEAD
 
 		<div class="row">
 			<div class="col d-flex justify-content-center mt-5">
@@ -61,7 +62,62 @@
 					    </div>
 					</div>
 				</div>
+=======
+	<?php
+		if(isset($_GET['regSuccess'])){
+	?>
+		<div class="alert alert-secondary" role="alert">
+			Account registration success! You may now login your account.
+		</div>
+	<?php
+		}
+	?>
+	
+	<div class="row">
+		<div class="col d-flex justify-content-center">
+			<div class="card bg-dark text-white mt-3">
+			  <img class="card-img" src="assets/img/church-banner2.jpg" alt="Card image">
+			  <div class="card-img-overlay">
+			  	<h5 class="card-title d-flex justify-content-center" style="font-size: 30px;">Saints Peter & Paul Parish Record Keeping System</h5>
+			  	<h3 class="login-header-title d-flex justify-content-center mt-3">L O G I N</h3>
+			  </div>
+			  <div class="card-img-overlay  d-flex align-items-center">
+			    <div class="row">
+			  		<div class="col-4 mt-3">
+			  			<a class="select-login-card" href="login/member-login.php">
+			  			<div class="card login-card">
+			  			<i class='bx bxs-user-circle d-flex justify-content-center mt-1'></i>
+						  <div class="card-body d-flex justify-content-center">
+						    <h5 class="card-title login-card-title">Login as Member</h5>
+						  </div>
+						</div>
+						</a>
+			  		</div>
+			  		<div class="col-4 mt-3">
+			  			<a class="select-login-card" href="login/office-staff-login.php">
+			  			<div class="card login-card">
+			  			<i class='bx bx-user-circle d-flex justify-content-center mt-1'></i>
+						  <div class="card-body d-flex justify-content-center">
+						    <h5 class="card-title login-card-title">Login as Office Staff</h5>
+						  </div>
+						</div>
+						</a>
+			  		</div>
+			  		<div class="col-4 mt-3">
+			  			<a class="select-login-card" href="login/admin-login.php">
+			  			<div class="card login-card">
+			  			<i class='bx bxs-user d-flex justify-content-center mt-1'></i>
+						  <div class="card-body d-flex justify-content-center">
+						    <h5 class="card-title login-card-title">Login as Admin</h5>
+						  </div>
+						</div>
+						</a>
+			  		</div>
+			  	</div>
+			  </div>
+>>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 			</div>
+		</div>
 	</div>
 
 	<div class="row mt-5">

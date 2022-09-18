@@ -16,6 +16,11 @@
   <link rel="stylesheet" type="text/css" href="../../css/calendar.css">
   
   <script>
+<<<<<<< HEAD
+=======
+
+   
+>>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
   $(document).ready(function() {
    var calendar = $('#calendar').fullCalendar({
     editable:true,
@@ -29,7 +34,12 @@
     selectHelper:true,
     select: function(start, end, allDay)
     {
+<<<<<<< HEAD
      var title = prompt("Enter Event Title");
+=======
+    $('#createEvent').modal('show');
+     // var title = prompt("Enter Event Title");
+>>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
      if(title)
      {
       var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
@@ -82,6 +92,7 @@
      });
     },
 
+<<<<<<< HEAD
     eventClick:function(event)
     {
      if(confirm("Are you sure you want to remove it?"))
@@ -98,6 +109,14 @@
        }
       })
      }
+=======
+    eventClick:function(eventsent)
+    {
+      $('#titleEvent').val(event.title);
+      $('#date').val(event.start);
+      // $('#desc').val(info.event.extendedProps.description);
+     $('#createEvent').modal('show');
+>>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
     },
 
    });
@@ -111,5 +130,49 @@
    <div id="calendar"></div>
 
 
+<<<<<<< HEAD
+=======
+<!-- modal -->
+
+<!-- CREATE NEW EVENTS MODAL -->
+
+<div class="modal fade" id="createEvent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Title</label>
+              <input type="" class="form-control" id="titleEvent" aria-describedby="emailHelp" placeholder="Title of Announcement" required>
+            </div>
+            <div class="form-group mt-2">
+              <label for="exampleInputPassword1">Date</label>
+              <input type="" class="form-control" id="date" placeholder="" required>
+            </div>
+            <div class="form-group mt-2">
+              <label for="exampleInputPassword1">Description</label>
+              <textarea class="form-control" id="desc" rows="3"></textarea>
+            </div>
+      </div>
+
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="submit" class="btn modal-btn-baptismal">Create Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+   
+
+
+>>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
  </body>
 </html>
