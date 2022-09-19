@@ -24,45 +24,7 @@
 	<?php include_once("includes/navbar.php") ?>
 
 	<div class="container">
-<<<<<<< HEAD
 
-		<div class="row">
-			<div class="col d-flex justify-content-center mt-5">
-				<div class="card mt-5" style="width: 40rem;">
-				  <div class="card-header header-title d-flex justify-content-center">
-				  	<i class='bx bxs-user-circle mr-5'></i>
-				    <h5 class="text-uppercase title-login">L O G I N</h5>
-				  </div>
-				  <div class="card-body">
-				    <form>
-					  <div class="form-group">
-					    <label for="exampleInputEmail1" class="d-flex justify-content-center text-title">Username or Email</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputPassword1" class="d-flex justify-content-center text-title mt-3">Password</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-					  </div>
-
-					  <div class="d-flex justify-content-center mt-3">
-					  <button type="submit" class="btn btn-submit">Enter</button>
-					  </div>
-					</form>
-
-					  </div>
-
-				  	<div class="card-footer">
-				  		<div class="row">
-				  			<div class="col d-flex justify-content-center">
-					    		<img src="assets/png/bu-logo.png" style="width: 6%;">&nbsp;&nbsp;
-					    		<img src="assets/png/bupc-logo.png" style="width: 6%;">&nbsp;&nbsp;
-					    		<img src="assets/png/church-logo.png" style="width: 6%;">&nbsp;&nbsp;
-					    	</div>
-					    </div>
-					</div>
-				</div>
-=======
 	<?php
 		if(isset($_GET['regSuccess'])){
 	?>
@@ -115,7 +77,6 @@
 			  		</div>
 			  	</div>
 			  </div>
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 			</div>
 		</div>
 	</div>
