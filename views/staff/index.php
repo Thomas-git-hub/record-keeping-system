@@ -5,8 +5,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
 
-<<<<<<< HEAD
-=======
   <!-- full calendar -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
@@ -15,7 +13,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
 
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
   <!-- boxicon cdn -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
@@ -24,8 +21,6 @@
   <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
 
-<<<<<<< HEAD
-=======
 
   <script>
   $(document).ready(function() {
@@ -107,7 +102,6 @@
   });
    
   </script>
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
   
   
  </head>
@@ -128,11 +122,7 @@
   </div>
   <h2 align="center" class="mt-3 mb-5" style="font-size: 30px; font-weight: bold; color: #6d5b4b;">Record Keeping System</h2>
 
-<<<<<<< HEAD
-  <?php include_once("../../assets/temp/calendar.php") ?>
-=======
   <div id="calendar"></div>
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 
   <div class="row mt-3 mb-5">
     <div class="col">

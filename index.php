@@ -24,7 +24,6 @@
 	<?php include_once("includes/navbar.php") ?>
 
 	<div class="container">
-
 	<?php
 		if(isset($_GET['regSuccess'])){
 	?>

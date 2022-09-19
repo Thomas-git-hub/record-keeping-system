@@ -38,11 +38,8 @@
 
 <!-- CREATE NEW EVENTS MODAL -->
 
-<<<<<<< HEAD
-=======
 <!-- CREATE NEW EVENTS MODAL -->
 
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 <div class="modal fade" id="createEvent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -55,8 +52,6 @@
 
       <div class="modal-body">
         <form>
-<<<<<<< HEAD
-=======
             <div class="form-group">
               <label for="">Choose Wether Event/Announcement</label>
               <select class="form-select mb-3"  name="Filter Year"  required>
@@ -99,7 +94,6 @@
 
       <div class="modal-body">
         <form>
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 
             <div class="form-group">
               <label for="exampleInputEmail1">Title</label>
@@ -121,11 +115,7 @@
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-</div>
-=======
 </div> -->
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 
 
 <!-- CREATE BAPTISMAL MODAL -->

@@ -49,27 +49,14 @@
        </a>
        <span class="tooltip">Members</span>
      </li>
-<<<<<<< HEAD
-     <li>
-=======
 <!--      <li>
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
        <a href="#">
          <i class='bx bxs-report' ></i>
          <span class="links_name">Reports</span>
        </a>
        <span class="tooltip">Reports</span>
-<<<<<<< HEAD
-     </li>
-     
-   
-    </div>
-  </div>
-
-=======
      </li> -->
      
    
     </div>
   </div>
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb

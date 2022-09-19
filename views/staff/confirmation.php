@@ -52,10 +52,7 @@
 
 	  <div class="col d-flex justify-content-end">
 	    <button type="button" class="btn btn-create-baptismal mr-3" data-toggle="modal" data-target="#createConfirmation">Create Confirmation</button>
-<<<<<<< HEAD
-=======
 	    <button type="button" class="btn btn-generate-report mr-3 mx-3" id="" data-toggle="tooltip" data-placement="left" title="Generate Report"><i class='bx bxs-file-pdf'></i></button>
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 	  </div>
 	</div>  
 	

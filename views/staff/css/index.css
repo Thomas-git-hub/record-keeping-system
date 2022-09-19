@@ -56,14 +56,9 @@ body{
 	border-bottom: 1px solid #32cd32;
 }
 .btn-update:hover{
-<<<<<<< HEAD
-	background-color: #32cd32;
-	border-radius: 90px;
-=======
 	/*background-color: #32cd32;*/
 	border-radius: 90px;
 	border: 1px solid #32cd32;
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 }
 
 .bxs-printer{
@@ -73,14 +68,6 @@ body{
 
 .btn-print{
 	background-color: transparent;
-<<<<<<< HEAD
-	border-bottom: 1px solid #7DF9FF;
-}
-
-.btn-print:hover{
-	background-color: #7DF9FF;
-	border-bottom: 1px solid #7DF9FF;
-=======
 	border-bottom: 1px solid #3895d3;
 }
 
@@ -88,7 +75,6 @@ body{
 	/*background-color: #7DF9FF;*/
 	/*border-bottom: 1px solid #7DF9FF;*/
 	border: 1px solid #3895d3;
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 	border-radius: 90px;
 }
 
@@ -110,8 +96,6 @@ body{
 	border: 1px solid #6d5b4b;
 }
 
-<<<<<<< HEAD
-=======
 .btn-generate-report{
 	background-color: transparent;
 	border-bottom: 1px solid #6d5b4b;
@@ -128,7 +112,6 @@ body{
 	font-size: 30px;
 }
 
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 /*marriage css*/
 .bx-arrow-back{
 	color: #dbcbbe !important;

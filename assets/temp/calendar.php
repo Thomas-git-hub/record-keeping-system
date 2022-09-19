@@ -16,11 +16,8 @@
   <link rel="stylesheet" type="text/css" href="../../css/calendar.css">
   
   <script>
-<<<<<<< HEAD
-=======
 
    
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
   $(document).ready(function() {
    var calendar = $('#calendar').fullCalendar({
     editable:true,
@@ -34,12 +31,8 @@
     selectHelper:true,
     select: function(start, end, allDay)
     {
-<<<<<<< HEAD
-     var title = prompt("Enter Event Title");
-=======
     $('#createEvent').modal('show');
      // var title = prompt("Enter Event Title");
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
      if(title)
      {
       var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
@@ -92,31 +85,12 @@
      });
     },
 
-<<<<<<< HEAD
-    eventClick:function(event)
-    {
-     if(confirm("Are you sure you want to remove it?"))
-     {
-      var id = event.id;
-      $.ajax({
-       url:"delete.php",
-       type:"POST",
-       data:{id:id},
-       success:function()
-       {
-        calendar.fullCalendar('refetchEvents');
-        alert("Event Removed");
-       }
-      })
-     }
-=======
     eventClick:function(eventsent)
     {
       $('#titleEvent').val(event.title);
       $('#date').val(event.start);
       // $('#desc').val(info.event.extendedProps.description);
      $('#createEvent').modal('show');
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
     },
 
    });
@@ -130,8 +104,6 @@
    <div id="calendar"></div>
 
 
-<<<<<<< HEAD
-=======
 <!-- modal -->
 
 <!-- CREATE NEW EVENTS MODAL -->
@@ -173,6 +145,5 @@
    
 
 
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
  </body>
 </html>

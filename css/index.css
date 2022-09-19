@@ -7,8 +7,6 @@ body{
 	background-color: #f8f5f2;
 }
 
-<<<<<<< HEAD
-=======
 .bx-arrow-back{
 	color: #fff;
 	font-size: 30px;
@@ -23,7 +21,6 @@ body{
 	font-size: 40px;
 }
 
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 .bxs-user-circle{
 	font-size: 30px;
 	color: #6d5b4b;
@@ -46,11 +43,7 @@ body{
 
 .title-login{
 	color: #6d5b4b;
-<<<<<<< HEAD
-	font-size: 25px;
-=======
 	font-size: 15px;
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 }
 
 .text-title{
@@ -69,19 +62,12 @@ body{
 }
 
 .card-footer{
-<<<<<<< HEAD
-	background-color: #dbcbbe;
-=======
 	background-color: #fff;
 	border-top: none;
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 }
 
 .h6-footer{
 	font-size: 10px;
-<<<<<<< HEAD
-	color: #dbcbbe;
-=======
 	color: #888;
 }
 
@@ -128,5 +114,4 @@ body{
 .bxs-user{
 	font-size: 90px;
 	color: #6d5b4b;
->>>>>>> 3584a3f4efb2983fa41534de8e159b7be01fe8fb
 }
