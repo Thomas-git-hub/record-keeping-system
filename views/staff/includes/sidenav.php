@@ -49,13 +49,13 @@
        </a>
        <span class="tooltip">Members</span>
      </li>
-<!--      <li>
-       <a href="#">
+     <li>
+       <a href="reports.php">
          <i class='bx bxs-report' ></i>
          <span class="links_name">Reports</span>
        </a>
        <span class="tooltip">Reports</span>
-     </li> -->
+     </li>
      
    
     </div>

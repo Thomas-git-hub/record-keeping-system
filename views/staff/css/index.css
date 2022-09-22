@@ -97,19 +97,22 @@ body{
 }
 
 .btn-generate-report{
+	width: 70%;
+	font-size: 20px;
 	background-color: transparent;
 	border-bottom: 1px solid #6d5b4b;
 	border-radius: 10px;
 }
 
 .btn-generate-report:hover{
+	color: #fff;
 	background-color: #c5ac97;
 	border: 1px solid #6d5b4b;
 	border-radius: 10px;
 }
 
 .bxs-file-pdf{
-	font-size: 30px;
+	font-size: 20px;
 }
 
 /*marriage css*/
@@ -167,7 +170,7 @@ body{
 .badge-done{
 	background-color: #32cd32;
 }
-.bxs-check-circle{
+.bxs-envelope-open{
 	font-size: 25px;
 	color: #858280;
 }
@@ -176,8 +179,12 @@ body{
 	border-bottom: 1px solid black;
 }
 .btn-confirm:hover{
-	background-color: #6d5d4b;
+	border: 1px solid black;
 	border-radius: 90px;
+}
+.request-card-header{
+	background-color: #858280 !important;
+	color: #fff !important;
 }
 
 /*members*/

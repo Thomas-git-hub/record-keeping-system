@@ -29,7 +29,7 @@
     	<div class="col">
 	      	<div class="card card-banner">
 	        	<div class="card-body">
-	          	<h5 class="banner-title d-flex justify-content-center">Manage Marriage</h5>
+	          		<h5 class="banner-title d-flex justify-content-center">Manage Marriage</h5>
 	        	</div>
 	      	</div>
     	</div>
@@ -49,10 +49,8 @@
 	        </select>
 	     </div>
 	  </div>
-
 	  <div class="col d-flex justify-content-end">
 	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="location.href='http://localhost/record-keeping-system/views/staff/marriage-form.php';">Create Marriage Form</button>
-	    <button type="button" class="btn btn-generate-report mr-3 mx-3" id="" data-toggle="tooltip" data-placement="left" title="Generate Report"><i class='bx bxs-file-pdf'></i></button>
 	  </div>
 	</div>  
 	
@@ -72,9 +70,9 @@
 		                <td>Nixxon Doe</td>
 		                <td>09/12/1999</td>
 						<td>
-							<button class="btn btn-update" data-toggle="tooltip" data-placement="top" title="U P D A T E">
+							<!-- <button class="btn btn-update" data-toggle="tooltip" data-placement="top" title="U P D A T E">
 								<i class='bx bx-reset' ></i>
-							</button>
+							</button> -->
 							<button class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
 								<i class='bx bxs-printer' ></i>
 							</button>
