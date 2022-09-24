@@ -36,20 +36,6 @@
   	</div>
 
 	<div class="row mt-5 mb-3">
-	  <div class="col d-flex justify-content-start ml-3">
-	  	<div class="dropdown">
-		  	<select class="form-select dropdown-filter-year mb-3"  name="Filter Year"  required>
-	            <option selected="true" disabled="disabled">Filter Year</option>
-	            <option value="2022">2022</option>
-	            <option value="2021">2021</option>
-	            <option value="2020">2020</option>
-	            <option value="2019">2019</option>
-	            <option value="2018">2018</option>
-	            <option value="2017">2017</option>
-	        </select>
-	     </div>
-	  </div>
-
 	  <div class="col d-flex justify-content-end">
 	    <button type="button" class="btn btn-generate-report mr-3" data-toggle="modal" data-target="#addStaff" data-toggle="tooltip" data-placement="left" title="Add New Staff Account">
 	    	<i class='bx bxs-user-plus'></i>
@@ -59,14 +45,13 @@
 	</div>  
 	
 		<div class="row table">
-			<table id="datatable" class="table display" >
+			<table id="datatable" class="table display">
 		        <thead>
 		            <tr>
 		                <th>Name</th>
 		                <th>Address</th>
 		                <th>Contact No.</th>
 		                <th>Email</th>
-		                <th>Username</th>
 		                <th>Password</th>
 		                <th>Action</th>
 		            </tr>
@@ -77,11 +62,10 @@
 		                <td>Polangui Albay</td>
 		                <td>09156748575</td>
 		                <td>email@email.com</td>
-		                <td>email@email.com</td>
 		                <td>*****</td>
 						<td>
-							<button class="btn btn-update" data-toggle="modal" data-target="#updateBaptismal" data-toggle="tooltip" data-placement="top" title="U P D A T E">
-								<i class='bx bx-reset' ></i>
+							<button class="btn btn-update" data-toggle="modal" data-target="#updateStaffacc" data-toggle="tooltip" data-placement="top" title="U P D A T E">
+								<i class='bx bx-reset'></i>
 							</button>
 							<button type="button" class="btn btn-enable" id="" data-toggle="tooltip" data-placement="left" title="Generate Report">Enable</i></button>
 							<button type="button" class="btn btn-disable" id="" data-toggle="tooltip" data-placement="left" title="Generate Report">Disable</i></button>
@@ -94,7 +78,6 @@
 		                <th>Address</th>
 		                <th>Contact No.</th>
 		                <th>Email</th>
-		                <th>Username</th>
 		                <th>Password</th>
 		                <th>Action</th>
 		            </tr>
@@ -104,8 +87,6 @@
 	</div>
 
 </div>
-
-
 </div>
 
 <?php include_once("includes/modal.php") ?>

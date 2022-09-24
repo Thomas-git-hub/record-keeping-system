@@ -88,87 +88,76 @@
 
       <div class="modal-body">
         <form>
-
             <div class="form-group">
               <label for="exampleInputEmail1">Name</label>
               <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter full name" required>
             </div>
             <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Fathers Name</label>
+              <label for="exampleInputPassword1">Address</label>
               <input type="" class="form-control" id="exampleInputPassword1" placeholder="" required>
             </div>
             <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Mothers Name</label>
-              <input type="" class="form-control" id="exampleInputPassword1" placeholder="" required>
+              <label for="exampleInputPassword1">Contact No.</label>
+              <input type="" class="form-control" id="exampleInputPassword1" placeholder="-09" required>
             </div>
             <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Birthdate</label>
-              <input type="date" class="form-control" id="exampleInputPassword1" placeholder="" required>
+              <label for="exampleInputPassword1">Email</label>
+              <input type="" class="form-control" id="exampleInputPassword1" placeholder="@email.com" required>
             </div>
             <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Year of Baptism</label>
-              <input type="" class="form-control" id="exampleInputPassword1" placeholder="" required>
-            </div>
-            <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Sponsors Name</label>
-              <input type="" class="form-control mb-2" id="exampleInputPassword1" placeholder="Sponsor 1" required>
-              <input type="" class="form-control" id="exampleInputPassword1" placeholder="Sponsor 2" required>
+              <label for="exampleInputPassword1">Password</label>
+              <input type="" class="form-control mb-2" id="exampleInputPassword1" placeholder="" required>
             </div>
       </div>
 
       <div class="modal-footer d-flex justify-content-center">
-        <button type="submit" class="btn modal-btn-baptismal">Create Now</button>
+        <button type="submit" class="btn modal-btn-baptismal">Add New Account</button>
         </form>
       </div>
     </div>
   </div>
 </div>
 
-<!-- UPDATE BAPTISMAL MODAL -->
+<!-- UPDATE STAFF ACCOUNT MODAL -->
 
-<div class="modal fade" id="updateBaptismal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="updateStaffacc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Update Baptismal</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Update Account</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
 
+      <form>
       <div class="modal-body">
-        <form>
-
+        
             <div class="form-group">
               <label for="exampleInputEmail1">Name</label>
-              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter full name" required>
+              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter full name" readonly>
             </div>
             <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Fathers Name</label>
-              <input type="" class="form-control" id="exampleInputPassword1" placeholder="" required>
+              <label for="exampleInputPassword1">Address</label>
+              <input type="" class="form-control" id="exampleInputPassword1" placeholder="" readonly>
             </div>
             <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Mothers Name</label>
-              <input type="" class="form-control" id="exampleInputPassword1" placeholder="" required>
+              <label for="exampleInputPassword1">Contact No.</label>
+              <input type="" class="form-control" id="exampleInputPassword1" placeholder="-09" required>
             </div>
             <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Birthdate</label>
-              <input type="date" class="form-control" id="exampleInputPassword1" placeholder="" required>
+              <label for="exampleInputPassword1">Email</label>
+              <input type="" class="form-control" id="exampleInputPassword1" placeholder="@email.com" required>
             </div>
             <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Year of Baptism</label>
-              <input type="" class="form-control" id="exampleInputPassword1" placeholder="" required>
+              <label for="exampleInputPassword1">Password</label>
+              <input type="" class="form-control mb-2" id="exampleInputPassword1" placeholder="" required>
             </div>
-            <div class="form-group mt-2">
-              <label for="exampleInputPassword1">Sponsors Name</label>
-              <input type="" class="form-control mb-2" id="exampleInputPassword1" placeholder="Sponsor 1" required>
-              <input type="" class="form-control" id="exampleInputPassword1" placeholder="Sponsor 2" required>
-            </div>
-      </div>
 
+      </div>
       <div class="modal-footer d-flex justify-content-center">
         <button type="submit" class="btn modal-btn-baptismal">Update</button>
-        </form>
+      </form>
       </div>
     </div>
   </div>
