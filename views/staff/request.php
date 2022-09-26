@@ -51,7 +51,7 @@
 		            <tr>
 		            	<td>John Doe</td>
 		                <td>09/12/2022</td>
-		                <td>Baptismal</td>>
+		                <td>Baptismal</td>
 		                <td>01/26/2017</td>
 		                <td>Email@gmail.com</td>
 						<td>

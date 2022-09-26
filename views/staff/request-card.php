@@ -50,6 +50,8 @@
 		  </div>
 		  <div class="card-body">
 		    <h6 class="mt-3">Name:&nbsp;<b>Thomas Allene</b></h6>
+		    <h6 class="mt-3">Fathers Name:&nbsp;<b>Thomas</b></h6>
+		    <h6 class="mt-3">Mothers Name:&nbsp;<b>Allene</b></h6>
 		    <h6 class="mt-3">Year of Baptism:&nbsp;<b>09/22/2017</b></h6>
 		    <h6 class="mt-4">Date of Request:&nbsp;<b>09/22/2022</b></h6>
 		    <h6 class="mt-3">Type of Request:&nbsp;<b>Baptismal</b></h6>
