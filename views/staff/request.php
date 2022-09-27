@@ -34,31 +34,17 @@
 	      	</div>
     	</div>
   	</div>
-
-	<div class="row mt-5 mb-2">
-	  <div class="col d-flex justify-content-end ml-3">
-	  	<div class="dropdown">
-		  	<select class="form-select filter-status mb-2"  name="Filter Year"  required>
-	            <option selected="true" disabled="disabled">Filter Status</option>
-	            <option value="Pending">Pending</option>
-	            <option value="Processing">Processing</option>
-	            <option value="Done">Done</option>
-	        </select>
-	     </div>
-	  </div>
-	</div>  
 	
 		<div class="row table">
-			<table id="datatable" class="table display" >
+			<table id="datatable" class="table display">
 		        <thead>
 		            <tr>
 		                <th>Name</th>
 		                <th>Date of Request</th>
 		                <th>Type of Request</th>
-		                <th>Description</th>
 		                <th>Year of Baptism</th>
-		                <th>Status</th>
-		                <th>Action</th>
+		                <th>Email Address</th>
+		                <th>View</th>
 		            </tr>
 		        </thead>
 		        <tbody>
@@ -66,14 +52,11 @@
 		            	<td>John Doe</td>
 		                <td>09/12/2022</td>
 		                <td>Baptismal</td>
-		                <td>test message</td>
 		                <td>01/26/2017</td>
-		                <td>
-		                	<span class="badge badge-pending">Pending</span>
-						</td>
+		                <td>Email@gmail.com</td>
 						<td>
-							<button class="btn btn-confirm" data-toggle="tooltip" data-placement="top" title="C O N F I R M">
-								<i class='bx bxs-check-circle'></i>
+							<button class="btn btn-confirm" data-toggle="tooltip" data-placement="top" title="V I E W" onclick="document.location='http://localhost/record-keeping-system/views/staff/request-card.php'">
+								<i class='bx bxs-envelope-open'></i>
 							</button>
 						</td>
 		            </tr>
@@ -81,30 +64,12 @@
 		            	<td>John Doe</td>
 		                <td>09/12/2022</td>
 		                <td>Baptismal</td>
-		                <td>test message</td>
 		                <td>01/26/2017</td>
-		                <td>
-		                	<span class="badge badge-processing">Processing</span>
-						</td>
+		                <td>Email@gmail.com</td>
 						<td>
-							<!-- <button class="btn btn-confirm" data-toggle="tooltip" data-placement="top" title="C O N F I R M">
-								<i class='bx bxs-check-circle'></i>
-							</button> -->
-						</td>
-		            </tr>
-		            <tr>
-		            	<td>John Doe</td>
-		                <td>09/12/2022</td>
-		                <td>Baptismal</td>
-		                <td>test message</td>
-		                <td>01/26/2017</td>
-		                <td>
-		                	<span class="badge badge-done">Done</span>
-						</td>
-						<td>
-							<!-- <button class="btn btn-confirm" data-toggle="tooltip" data-placement="top" title="C O N F I R M">
-								<i class='bx bxs-check-circle'></i>
-							</button> -->
+							<button class="btn btn-confirm" data-toggle="tooltip" data-placement="top" title="V I E W" onclick="document.location='http://localhost/record-keeping-system/views/staff/request-card.php'">
+								<i class='bx bxs-envelope-open'></i>
+							</button>
 						</td>
 		            </tr>
 		        </tbody>
@@ -113,19 +78,15 @@
 		                <th>Name</th>
 		                <th>Date of Request</th>
 		                <th>Type of Request</th>
-		                <th>Description</th>
 		                <th>Year of Baptism</th>
 		                <th>Status</th>
-		                <th>Action</th>
+		                <th>View</th>
 		            </tr>
 		        </tfoot>
 		    </table>
 		</div>
-	</div>
 
 </div>
-
-
 </div>
 
 <?php include_once("includes/modal.php") ?>

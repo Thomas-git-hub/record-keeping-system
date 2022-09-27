@@ -17,21 +17,65 @@
 	<link rel="stylesheet" href="css/sidebar.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<!-- TEST CHART.JS "CDN" -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 </head>
+
+<script>
+	var x = 40;
+	var y = 15;
+	var z = 35;
+
+	var a;
+
+	if (x > y && x > z){
+		a = x+10;
+	}
+
+  const labels = [
+    'Baptismal',
+    'Marriage',
+    'Confirmation',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'No. of Persons',
+      backgroundColor: 'rgb(197, 172, 132)',
+      borderColor: 'rgb(109, 91, 75)',
+      data: [x, y, z, a],
+    }]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {}
+  };
+</script>
+
+
 
 <body>
 
 <div class="container">
 
-<form id="test-form" method="POST">
-  <div class="form-group">
-    <label for="exampleInputEmail1">phone number</label>
-    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="09-" pattern="[0-9]*">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<div class="mt-5">
+  <canvas id="myChart"></canvas>
+</div>
+
 
 </div>
+
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>

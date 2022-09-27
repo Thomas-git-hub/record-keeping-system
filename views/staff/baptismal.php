@@ -52,10 +52,8 @@
 	        </select>
 	     </div>
 	  </div>
-
 	  <div class="col d-flex justify-content-end">
-	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="document.location='https://localhost/record-keeping-system/views/staff/baptismal-form.php'">Create Baptismal</button>
-	    <button type="button" class="btn btn-generate-report mr-3 mx-3" id="" data-toggle="tooltip" data-placement="left" title="Generate Report"><i class='bx bxs-file-pdf'></i></button>
+	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="document.location='http://localhost/record-keeping-system/views/staff/baptismal-form.php'">Create Baptismal</button>
 	  </div>
 	</div>  
 	
@@ -102,9 +100,6 @@
 										<p><?php echo $sponsor2; ?></p>
 									</td>
 									<td>
-										<button class="btn btn-update" data-toggle="modal" data-target="#updateBaptismal" data-toggle="tooltip" data-placement="top" title="U P D A T E">
-											<i class='bx bx-reset' ></i>
-										</button>
 										<a href="../PDF-views/baptismal-pdf.php?id=<?php echo $id; ?>" target="_blank"  class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
 											<i class='bx bxs-printer' ></i>
 									</a>

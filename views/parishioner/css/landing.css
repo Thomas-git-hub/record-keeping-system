@@ -1,0 +1,76 @@
+body{
+
+	overflow-x: hidden;
+}
+
+.fix-navbar{
+	background-color: #DBCBBE;
+}
+
+.nav-a-title{
+	color: #fff;
+	text-decoration: none;
+	padding: 8px;
+}
+
+.nav-a-title:hover{
+	color: #000;
+	text-decoration: none;
+	background-color: #f8f5f2;
+	border-radius: 10px;
+}
+
+.row-content{
+	margin-top: 58px;
+}
+
+.left-con{
+	/*border-right: 1px solid #dbcbbe;*/
+}
+
+.mid-con{
+  	padding: 15px;
+  	width: 50%;
+  	height: 720px;
+  	overflow: scroll;
+}
+
+.mid-con::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.mid-con {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.right-con{
+	height: 720px;
+  	overflow: scroll;
+}
+
+.right-con::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.right-con {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+/*announcement css*/
+
+.bx-news{
+	font-size: 30px;
+}
+
+.card-footer{
+	background-color: #fff;
+	border-top: none;
+}
+
+
+/*right-content*/
