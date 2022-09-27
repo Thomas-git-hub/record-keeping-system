@@ -37,12 +37,12 @@
 	  <div class="card-body">
 	    <div class="row row-border">
 	    <h5 class="card-title d-flex justify-content-center">This is to Certify</h5>	
-	    <form>
+	    <form action="../../includes/process/baptismal.php" method="POST">
 	    	<div class="row">
 		    	<div class="col mb-2">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">Name of Child</label>
-			              <input type="" class="form-control" id="" placeholder="First Name, Middle Name, Last Name" required>
+			              <input type="text" name="child" class="form-control" id="" placeholder="First Name, Middle Name, Last Name" required>
 			            </div>
 		    	</div>
 	    	</div>
@@ -50,13 +50,13 @@
 		    	<div class="col-6 mb-2">
 			            <div class="form-group mt-2">
 			              <label for="exampleInputEmail1">Name of Father</label>
-			              <input type="" class="form-control" id=""placeholder="First Name, Last Name" required>
+			              <input type="text" name="father" class="form-control" id=""placeholder="First Name, Last Name" required>
 			            </div>
 			    </div>
 			    <div class="col-6">
 			            <div class="form-group mt-2">
 			              <label for="exampleInputEmail1">Name of Mother</label>
-			              <input type="" class="form-control" id="" placeholder="Maiden Name (First Name, Last Name)" required>
+			              <input type="text" name="mother" class="form-control" id="" placeholder="Maiden Name (First Name, Last Name)" required>
 			            </div>
 			    </div>
 	    	</div>
@@ -64,7 +64,7 @@
 		    	<div class="col mb-2">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">Born in</label>
-			              <input type="" class="form-control" id="" placeholder="first name" required>
+			              <input type="text" name="bplace" class="form-control" id="" placeholder="first name" required>
 			            </div>
 		    	</div>
 	    	</div>
@@ -72,7 +72,7 @@
 		    	<div class="col mb-2">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">Date of Birth</label>
-			              <input type="date" class="form-control" id="" placeholder="first name" required>
+			              <input type="date" name="bday" class="form-control" id="" placeholder="first name" required>
 			            </div>
 		    	</div>
 	    	</div>
@@ -80,13 +80,13 @@
 		    	<div class="col-6 mb-4">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">Church of</label>
-			              <input type="" class="form-control" id="" placeholder="" value="STS. PETER AND PAUL" readonly>
+			              <input type="text" name="church" class="form-control" id="" placeholder="" value="STS. PETER AND PAUL PARISH" readonly>
 			            </div>
 		    	</div>
 		    	<div class="col-6 mb-4">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">On Date</label>
-			              <input type="date" class="form-control" id="" placeholder="" required>
+			              <input type="date" name="baptDate" class="form-control" id="" placeholder="" required>
 			            </div>
 		    	</div>
 	    	</div>
@@ -95,7 +95,7 @@
 		    	<div class="col mb-2">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">By the Rev</label>
-			              <input type="" class="form-control" id="" placeholder="Fr. First Name, Last Name" required>
+			              <input type="text" name="priest" class="form-control" id="" placeholder="Fr. First Name, Last Name" required>
 			            </div>
 		    	</div>
 	    	</div>
@@ -103,8 +103,8 @@
 		    	<div class="col mb-2">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">Name of Sponsors</label>
-			              <input type="" class="form-control mb-2" id="" placeholder="(Sponsor1) First Name, Last Name" required>
-			              <input type="" class="form-control" id="" placeholder="(Sponsor2) First Name, Last Name" required>
+			              <input type="text" name="sponsor1" class="form-control mb-2" id="" placeholder="(Sponsor1) First Name, Last Name" required>
+			              <input type="text" name="sponsor2" class="form-control" id="" placeholder="(Sponsor2) First Name, Last Name" required>
 			            </div>
 		    	</div>
 	    	</div>
@@ -112,19 +112,19 @@
 		    	<div class="col-4 mb-2">
 			    			<div class="form-group">
 				              <label for="exampleInputEmail1">Baptismal Register No.</label>
-				              <input type="number" class="form-control" id="" placeholder="" required>
+				              <input type="number" name="regNum" class="form-control" id="" placeholder="" required>
 				            </div>
 			    </div>
 			    <div class="col-4 mb-2">
 			            <div class="form-group">
 			              <label for="exampleInputEmail1">Page</label>
-			              <input type="number" class="form-control" id="" placeholder="" required>
+			              <input type="number" name="pageNum" class="form-control" id="" placeholder="" required>
 			            </div>
 			    </div>
 			    <div class="col-4 mb-2">
 			            <div class="form-group">
 			              <label for="exampleInputEmail1">No.</label>
-			              <input type="number" class="form-control" id="" placeholder="" required>
+			              <input type="number" name="num" class="form-control" id="" placeholder="" required>
 			            </div>
 			    </div>
 			</div>
@@ -132,7 +132,7 @@
 		    	<div class="col mb-2">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">Date Issued</label>
-			              <input type="date" class="form-control mb-2" id="" placeholder="" required>
+			              <input type="date" name="issued" class="form-control mb-2" id="" placeholder="" required>
 			            </div>
 		    	</div>
 	    	</div>
@@ -140,7 +140,7 @@
 		    	<div class="col mb-2">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">Purpose</label>
-			              <input type="" class="form-control mb-2" id="" placeholder="" required>
+			              <input type="text" name="purpose" class="form-control mb-2" id="" placeholder="" required>
 			            </div>
 		    	</div>
 	    	</div>
@@ -148,14 +148,14 @@
 		    	<div class="col mb-2">
 		    			<div class="form-group">
 			              <label for="exampleInputEmail1">PARISH PRIEST/PAROCHAL VICAR</label>
-			              <input type="" class="form-control mb-2" id="" placeholder="" required>
+			              <input type="text" name="vicar" class="form-control mb-2" id="" placeholder="" required>
 			            </div>
 		    	</div>
 	    	</div>		
 	  	</div>
 
 			<div class="card-footer marriage-form-footer d-flex justify-content-center mb-4">
-		    	<button class="btn btn-form-submit">Add Baptismal</button>
+		    	<button type="submit" name="baptismalSubmit" class="btn btn-form-submit">Add Baptismal</button>
 		  	</div>
 	  	</form>
 
