@@ -9,7 +9,7 @@
           Account Name
         </a> -->
 
-        <a class="dropdown-item" href="#">Log Out <i class='bx bx-log-out-circle topnav_icon'></i></a>
+        <a class="dropdown-item" href="../../includes/process/logout.php?logout">Log Out <i class='bx bx-log-out-circle topnav_icon'></i></a>
 
         <!-- <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Profile <i class='bx bx-user-circle topnav_icon'></i></a></li>
