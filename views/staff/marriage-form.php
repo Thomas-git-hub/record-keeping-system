@@ -34,6 +34,9 @@
 	    Marriage Form
 	  </div>
 	  <div class="card-body">
+
+	  	<!-- START OF FORM -->
+		<form class="">
 	    <div class="row row-border">
 	    	<div class="col-2">
 	    		<h6>1. Name of Contracting Parties</h6>
@@ -418,7 +421,7 @@
 	    	</div>
 	    </div>
 
-	    <div class="row row-border">
+	    <div class="row">
 	    	<div class="col-2">
 	    		<h6>13. Residence</h6>
 	    		<p style="font-size: 12px; font-style: italic;">*Put N/A if Not Applicable</p>
@@ -462,12 +465,213 @@
 	    </div>
 
 	  </div>
+	</div>
+
+	<!-- START OF 2ND CARD/FORM -->
+
+	<div class="card mb-5">
+	  <div class="card-header">
+	    
+	  </div>
+	  <div class="card-body">
+
+	    <div class="row">
+	    	<div class="col-2">
+	    		<h6>15. Place of Marriage</h6>
+	    	</div>
+	    	<div class="col mb-2">
+		            <div class="form-group">
+		              <label for="exampleInputEmail1">Office of the/House of/Church of/Mosque of</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+		    <div class="col mb-2">
+		            <div class="form-group">
+		              <label for="exampleInputEmail1">City/Municipality</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row row-border">
+	    	<div class="col-2">
+	    		<h6></h6>
+	    	</div>
+	    	<div class="col mb-2">
+		            <div class="form-group">
+		              <label for="exampleInputEmail1">Province</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row row-border">
+	    	<div class="col-2">
+	    		<h6>16. Date of Marriage</h6>
+	    	</div>
+	    	<div class="col mb-2">
+		            <div class="form-group">
+		              <input type="date" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row row-border">
+	    	<div class="col-2">
+	    		<h6>17. Time of Marriage</h6>
+	    	</div>
+	    	<div class="col mb-2">
+		            <div class="form-group">
+		              <input type="time" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row row-border">
+	    	<div class="col-2">
+	    		<h6>18. CERTIFICATION OF THE CONTRACTING PARTIES</h6>
+	    	</div>
+	    	<div class="col mb-2">
+		            <div class="form-group">
+		            	<label for="exampleInputEmail1">Name of Husband</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+		    <div class="col mb-2">
+		            <div class="form-group">
+		            	<label for="exampleInputEmail1">Name of Wife</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row row-border">
+	    	<div class="col-2">
+	    		<h6>19. CERTIFICATION OF SOLEMNIZING OFFICER</h6>
+	    	</div>
+	    	<div class="col mb-2">
+		            <div class="form-group">
+		            	<label for="exampleInputEmail1">Marriage License No.</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+		    <div class="col mb-2">
+		            <div class="form-group">
+		            	<label for="exampleInputEmail1">Date Issued</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+		    <div class="col mb-2">
+		            <div class="form-group">
+		            	<label for="exampleInputEmail1">Location</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row">
+	    	<div class="col-2">
+	    		<h6></h6>
+	    	</div>
+	    	<div class="col mb-2">
+		            <div class="form-group">
+		            	<label for="exampleInputEmail1">Name of Solemnizing Officer</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+		    <div class="col mb-2">
+		            <div class="form-group">
+		            	<label for="exampleInputEmail1">Position/Designation</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row row-border">
+	    	<div class="col-2">
+	    		<h6></h6>
+	    	</div>
+		    <div class="col mb-2">
+		            <div class="form-group">
+		            	<label for="exampleInputEmail1">Religion/Religious Sect., Registry No. & Expiration Date</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Leave it Blank if NA" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row row-border">
+	    	<div class="col-2">
+	    		<h6>20. WITNESSES</h6>
+	    	</div>
+		    <div class="col mb-2">
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Witness 1</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Witness 2</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Witness 3</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Witness 4</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row row-border">
+	    	<div class="col-2">
+	    		<h6>21. Recieved By</h6>
+	    	</div>
+		    <div class="col mb-2">
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Name in Print</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Title or Position</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Date</label>
+		              <input type="date" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		    </div>
+	    </div>
+
+	    <div class="row">
+	    	<div class="col-2">
+	    		<h6>22. Registered by the Civil Registrar</h6>
+	    	</div>
+		    <div class="col mb-2">
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Name in Print</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Title or Position</label>
+		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		            <div class="form-group mb-2">
+		            	<label for="exampleInputEmail1">Date</label>
+		              <input type="date" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		            </div>
+		    </div>
+	    </div>
+
+	  </div>
 
 		<div class="card-footer marriage-form-footer d-flex justify-content-center mb-4">
 	    	<button class="btn btn-form-submit">Submit Form</button>
 	  	</div>
 
 	</div>
+	</form>
+	<!-- END OF FORM -->
 </div>
 </div>
 

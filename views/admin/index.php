@@ -13,6 +13,10 @@
   <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
 
+
+  <!-- chart.js-CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   
   
  </head>
@@ -33,57 +37,69 @@
   </div>
   <h2 align="center" class="mt-3 mb-5" style="font-size: 30px; font-weight: bold; color: #6d5b4b;">Record Keeping System</h2>
 
-  <?php include_once("../../assets/temp/calendar.php") ?>
-
   <div class="row mt-3 mb-5">
-    <div class="col">
-      <button class="btn btn-announcement btn-block" data-toggle="modal" data-target="#createAnnouncement">Create New Announcement</button>
-    </div>
-    <div class="col">
-      <button class="btn btn-announcement btn-block" data-toggle="modal" data-target="#createEvent">Create New Events</button>
-    </div>
-  </div>
-
-  <div class="row mb-5">
-    <div class="col-4">
+    <div class="col-6">
       <div class="card">
         <div class="card-header">
-          No. of Request
+          No. of Staff Accounts
         </div>
         <div class="card-body">
-          <h5 class="card-content">15<i class='bx bx-check-double'></i></h5>
+          <h5 class="card-content">15<i class='bx bx-group' ></i></h5>
         </div>
       </div>
-    </div>
-    <div class="col-4">
-      <div class="card">
+      <div class="card mt-2">
         <div class="card-header">
-          No. of Activities
+          No. of Member Accounts
         </div>
         <div class="card-body">
           <h5 class="card-content">15<i class='bx bx-run' ></i></h5>
         </div>
       </div>
     </div>
-    <div class="col-4">
-      <div class="card">
-        <div class="card-header">
-          No. of Members
+    <div class="col-6">
+      <div class="row">
+        <div class="col d-flex justify-content-start">
+          <div class="dropdown">
+            <select class="form-select dropdown-filter-year mb-3"  name="Filter Year"  required>
+                  <option selected="true" disabled="disabled">Filter Year</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+              </select>
+           </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-content">15<i class='bx bx-group' ></i></h5>
-        </div>
+      </div>
+
+      <div class="mt-1 mb-5" style="width: 100%;">
+        <canvas id="myChart"></canvas>
       </div>
     </div>
   </div>
+
+  <div class="mb-5">
+    <?php include_once("../../assets/temp/calendar.php") ?>
+  </div>
+
 
   </div>
   </div>
   <?php include_once("includes/modal.php") ?>
 
+  <script src="js/chart.js"></script>
+
   <script src="js/sidebar.js"></script>
   <script src="../../js/popper.min.js"></script>
   <script src="../../js/bootstrap.min.js"></script>
+
+  <script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+  </script>
 
  </body>
 </html>

@@ -1,3 +1,6 @@
+<?php
+	require('../../includes/process/db_conn.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,10 +52,8 @@
 	        </select>
 	     </div>
 	  </div>
-
 	  <div class="col d-flex justify-content-end">
 	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="document.location='http://localhost/record-keeping-system/views/staff/baptismal-form.php'">Create Baptismal</button>
-	    <button type="button" class="btn btn-generate-report mr-3 mx-3" id="" data-toggle="tooltip" data-placement="left" title="Generate Report"><i class='bx bxs-file-pdf'></i></button>
 	  </div>
 	</div>  
 	
@@ -70,25 +71,44 @@
 		            </tr>
 		        </thead>
 		        <tbody>
-		            <tr>
-		            	<td>John Doe</td>
-		                <td>Nixxon Doe</td>
-		                <td>Haley Doe</td>
-		                <td>09/12/1999</td>
-		                <td>11/12/2000</td>
-		                <td>
-							<p>Sponsor1</p>
-							<p>Sponsor2</p>
-						</td>
-						<td>
-							<button class="btn btn-update" data-toggle="modal" data-target="#updateBaptismal" data-toggle="tooltip" data-placement="top" title="U P D A T E">
-								<i class='bx bx-reset' ></i>
-							</button>
-							<button class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
-								<i class='bx bxs-printer' ></i>
-							</button>
-						</td>
-		            </tr>
+		          <?php
+								$sql = "SELECT * FROM `baptismal`";
+								$query = mysqli_query($conn,$sql);
+								$count = mysqli_num_rows($query);
+
+								if($count == 0) {
+									echo "No records yet";
+								}else {
+									while($row = mysqli_fetch_array($query)){
+										$id = $row['id'];
+										$child = $row['child'];
+										$father = $row['father'];
+										$mother = $row['mother'];
+										$bday = $row['bday'];
+										$baptDate = $row['baptDate'];
+										$sponsor1 = $row['sponsor1'];
+										$sponsor2 = $row['sponsor2'];
+								?>
+								<tr>
+									<td><?php echo $child; ?></td>
+									<td><?php echo $father; ?></td>
+									<td><?php echo $mother; ?></td>
+									<td><?php echo $bday; ?></td>
+									<td><?php echo $baptDate; ?></td>
+									<td>
+										<p><?php echo $sponsor1; ?></p>
+										<p><?php echo $sponsor2; ?></p>
+									</td>
+									<td>
+										<a href="../PDF-views/baptismal-pdf.php?id=<?php echo $id; ?>" target="_blank"  class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
+											<i class='bx bxs-printer' ></i>
+									</a>
+									</td>
+								</tr>
+								<?php
+										}
+									}
+								?>
 		        </tbody>
 		        <tfoot>
 		            <tr>
