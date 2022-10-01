@@ -1,3 +1,6 @@
+<?php
+	include '../../includes/process/db_conn.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +53,7 @@
 	     </div>
 	  </div>
 	  <div class="col d-flex justify-content-end">
-	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="location.href='http://localhost/record-keeping-system/views/staff/marriage-form.php';">Create Marriage Form</button>
+	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="location.href='https://localhost/record-keeping-system/views/staff/marriage-form.php';">Create Marriage Form</button>
 	  </div>
 	</div>  
 	
@@ -69,22 +72,52 @@
 		            	<td>John Doe</td>
 		                <td>Nixxon Doe</td>
 		                <td>09/12/1999</td>
-						<td>
-							<!-- <button class="btn btn-update" data-toggle="tooltip" data-placement="top" title="U P D A T E">
-								<i class='bx bx-reset' ></i>
-							</button> -->
-							<button class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
-								<i class='bx bxs-printer' ></i>
-							</button>
-						</td>
+										<td>
+											<!-- <button class="btn btn-update" data-toggle="tooltip" data-placement="top" title="U P D A T E">
+												<i class='bx bx-reset' ></i>
+											</button> -->
+											<button class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
+												<i class='bx bxs-printer' ></i>
+											</button>
+										</td>
 		            </tr>
+								<?php
+									$sql = "SELECT CONCAT(b.fname, ' ', b.mname, ' ', b.lname ) AS `h_name`, CONCAT(c.fname, ' ', c.mname, ' ', c.lname) AS `w_name`, d.date_married FROM `marriage_no` a JOIN `husband` b JOIN `wife` c JOIN `others` d ON a.id LIKE b. registry_no AND a.id LIKE c.registry_no AND a.id LIKE d.registry_no";
+									$query = mysqli_query($conn, $sql);
+									$count = mysqli_num_rows($query);
+
+									if($count == 0) {
+										echo "No records yet";
+									}else {
+										while($row = mysqli_fetch_array($query)){
+											$h_name = $row['h_name'];
+											$w_name = $row['w_name'];
+											$date_married = $row['date_married'];
+								?>
+								<tr>
+									<td><?php echo $h_name; ?></td>
+									<td><?php echo $w_name; ?></td>
+									<td><?php echo $date_married; ?></td>
+									<td>
+											<!-- <button class="btn btn-update" data-toggle="tooltip" data-placement="top" title="U P D A T E">
+												<i class='bx bx-reset' ></i>
+											</button> -->
+											<button class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
+												<i class='bx bxs-printer' ></i>
+											</button>
+										</td>
+								</tr>
+								<?php
+										}
+									}
+								?>
 		        </tbody>
 		        <tfoot>
 		            <tr>
-		                <th>Name of Husband</th>
-		                <th>Name of Wife</th>
-		                <th>Date of Marriage</th>
-		                <th>Action</th>
+									<th>Name of Husband</th>
+		              <th>Name of Wife</th>
+		              <th>Date of Marriage</th>
+		              <th>Action</th>
 		            </tr>
 		        </tfoot>
 		    </table>

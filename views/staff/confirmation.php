@@ -50,22 +50,22 @@
 	     </div>
 	  </div>
 	  <div class="col d-flex justify-content-end">
-	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="document.location='http://localhost/record-keeping-system/views/staff/confirmation-form.php'">Create Confirmation</button>
+	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="document.location='https://localhost/record-keeping-system/views/staff/confirmation-form.php'">Create Confirmation</button>
 	  </div>
 	</div>  
 	
 		<div class="row table">
 			<table id="datatable" class="table display" >
 		        <thead>
-		            <tr>
-		                <th>Name</th>
-		                <th>Fathers Name</th>
-		                <th>Mothers Name</th>
-		                <th>Birthdate</th>
-		                <th>Year of Confirmation</th>
-		                <th>Sponsors Name</th>
-		                <th>Action</th>
-		            </tr>
+		          <tr>
+		            <th>Name</th>
+		            <th>Fathers Name</th>
+		            <th>Mothers Name</th>
+		            <th>Birthdate</th>
+		            <th>Year of Confirmation</th>
+		            <th>Sponsors Name</th>
+		            <th>Action</th>
+		        	</tr>
 		        </thead>
 		        <tbody>
 		            <tr>

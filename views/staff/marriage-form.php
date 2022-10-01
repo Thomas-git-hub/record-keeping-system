@@ -36,7 +36,7 @@
 	  <div class="card-body">
 
 	  	<!-- START OF FORM -->
-		<form class="">
+		<form action="../../includes/process/marriage.php" method="POST" class="">
 	    <div class="row row-border">
 	    	<div class="col-2">
 	    		<h6>1. Name of Contracting Parties</h6>
@@ -45,30 +45,30 @@
 	    		<h5 class="card-title d-flex justify-content-center">Husband</h5>
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">First Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
+		              <input type="text" name="h_fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Middle Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
+		              <input type="text" name="h_mname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Last Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
+		              <input type="text" name="h_lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    		<h5 class="card-title d-flex justify-content-center">Wife</h5>
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">First Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
+		              <input type="text" name="w_fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Middle Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
+		              <input type="text" name="w_mname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Last Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
+		              <input type="text" name="w_lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -82,11 +82,11 @@
 	    			<div class="row">
 		    			<div class="col-6 form-group">
 			              <label for="exampleInputEmail1">Date of Birth</label>
-			              <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+			              <input type="date" name="h_bday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 			            </div>
 			            <div class="col-6 form-group">
 			              <label for="exampleInputEmail1">Age</label>
-			              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+			              <input type="number" name="h_age" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 			            </div>
 		            </div>
 	    	</div>
@@ -94,11 +94,11 @@
 	    			<div class="row">
 		    			<div class="col-6 form-group">
 			              <label for="exampleInputEmail1">Date of Birth</label>
-			              <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+			              <input type="date" name="w_bday" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 			            </div>
 			            <div class="col-6 form-group">
 			              <label for="exampleInputEmail1">Age</label>
-			              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+			              <input type="number" name="w_age" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 			            </div>
 		            </div>
 	    	</div>
@@ -112,37 +112,37 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">House No./St./Bananggay</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="h_street" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">City/Municipality</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="h_city" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Province</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		              <input type="text" name="h_province" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Country</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		              <input type="text" name="h_country" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">House No./St./Bananggay</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="m_street" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">City/Municipality</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="m_city" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Province</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		              <input type="text" name="m_province" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Country</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		              <input type="text" name="m_country" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -156,7 +156,7 @@
 	    			<div class="row">
 		    			<div class="col-6 form-group">
 			              <label for="exampleInputEmail1">Sex/label</label>
-				            <select class="form-select mb-3"  name="Filter Year"  required>
+				            <select class="form-select mb-3"  name="h_sex"  required>
 					            <option selected="true" disabled="disabled">Select Gender</option>
 					            <option value="Male">Male</option>
 					            <option value="Female">Female</option>
@@ -164,7 +164,7 @@
 			            </div>
 			            <div class="col-6 form-group">
 			              <label for="exampleInputEmail1">Citizenship</label>
-			              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+			              <input type="text" name="h_citizenship" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 			            </div>
 		            </div>
 	    	</div>
@@ -172,7 +172,7 @@
 	    			<div class="row">
 		    			<div class="col-6 form-group">
 			              <label for="exampleInputEmail1">Sex/label</label>
-				            <select class="form-select mb-3"  name="Filter Year"  required>
+				            <select class="form-select mb-3"  name="m_sex"  required>
 					            <option selected="true" disabled="disabled">Select Gender</option>
 					            <option value="Male">Male</option>
 					            <option value="Female">Female</option>
@@ -180,7 +180,7 @@
 			            </div>
 			            <div class="col-6 form-group">
 			              <label for="exampleInputEmail1">Citizenship</label>
-			              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+			              <input type="text" name="m_citizenship" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 			            </div>
 		            </div>
 	    	</div>
@@ -188,34 +188,45 @@
 
 	    <div class="row row-border">
 	    	<div class="col-2">
-	    		<h6>5A. Date of Birth</h6>
-	    		<h6>5B. Age</h6>
+	    		<h6>5. Residence</h6>
 	    	</div>
 	    	<div class="col-5 mb-2">
-	    			<div class="row">
-		    			<div class="col-6 form-group">
-			              <label for="exampleInputEmail1">Date of Birth</label>
-			              <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
-			            </div>
-			            <div class="col-6 form-group">
-			              <label for="exampleInputEmail1">Age</label>
-			              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-			            </div>
+	    			<div class="form-group">
+		              <label for="exampleInputEmail1">House No./St./Bananggay</label>
+		              <input type="text" name="h_add_street" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+	    			<div class="form-group">
+		              <label for="exampleInputEmail1">City/Municipality</label>
+		              <input type="text" name="h_add_city" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		            <div class="form-group mt-2">
+		              <label for="exampleInputEmail1">Province</label>
+		              <input type="text" name="h_add_province" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		            </div>
+		            <div class="form-group mt-2">
+		              <label for="exampleInputEmail1">Country</label>
+		              <input type="text" name="h_add_country" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
-	    			<div class="row">
-		    			<div class="col-6 form-group">
-			              <label for="exampleInputEmail1">Date of Birth</label>
-			              <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
-			            </div>
-			            <div class="col-6 form-group">
-			              <label for="exampleInputEmail1">Age</label>
-			              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-			            </div>
+	    			<div class="form-group">
+		              <label for="exampleInputEmail1">House No./St./Bananggay</label>
+		              <input type="text" name="m_add_street" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+	    			<div class="form-group">
+		              <label for="exampleInputEmail1">City/Municipality</label>
+		              <input type="text" name="m_add_city" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		            </div>
+		            <div class="form-group mt-2">
+		              <label for="exampleInputEmail1">Province</label>
+		              <input type="text" name="m_add_province" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		            </div>
+		            <div class="form-group mt-2">
+		              <label for="exampleInputEmail1">Country</label>
+		              <input type="text" name="m_add_country" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 	    	</div>
-	    </div>
+			</div>
 
 	    <div class="row row-border">
 	    	<div class="col-2">
@@ -224,13 +235,13 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">Religion</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="h_religion" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">Religion</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="m_religion" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -242,7 +253,7 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 	    			 <label for="exampleInputEmail1">Civil Status</label>
-		             <select class="form-select mb-3"  name="Filter Year"  required>
+		             <select class="form-select mb-3"  name="h_civil_status"  required>
 			            <option selected="true" disabled="disabled">Select Civil Status</option>
 			            <option value="2022">Single</option>
 			            <option value="2020">Divorced</option>
@@ -254,7 +265,7 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 	    			 <label for="exampleInputEmail1">Civil Status</label>
-		             <select class="form-select mb-3"  name="Filter Year"  required>
+		             <select class="form-select mb-3"  name="m_civil_status"  required>
 			            <option selected="true" disabled="disabled">Select Civil Status</option>
 			            <option value="2022">Single</option>
 			            <option value="2020">Divorced</option>
@@ -272,29 +283,29 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">First Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
+		              <input type="text" name="h_father_fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Middle Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
+		              <input type="text" name="h_father_mname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Last Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
+		              <input type="text" name="h_father_lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">First Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
+		              <input type="text" name="m_father_fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Middle Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
+		              <input type="text" name="m_father_mname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Last Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
+		              <input type="text" name="m_father_lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -306,13 +317,13 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">Citizenship of Father</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="h_father_citizenship" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">Citizenship of Father</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="m_father_citizensip" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -324,29 +335,29 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">First Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
+		              <input type="text" name="h_mother_fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Middle Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
+		              <input type="text" name="h_mother_mname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Last Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
+		              <input type="text" name="h_mother_lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">First Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
+		              <input type="text" name="m_mother_fname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="first name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Middle Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
+		              <input type="text" name="m_mother_mname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="middle name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Last Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
+		              <input type="text" name="m_mother_lname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="last name" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -358,13 +369,13 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">Citizenship of Mother</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="h_mother_citizenship" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">Citizenship of Mother</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="m_mother_citizenship" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -377,29 +388,29 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">First Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" required>
+		              <input type="text" name="h_fname_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Middle Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Middle Name" required>
+		              <input type="text" name="h_mname_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Middle Name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Last Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" required>
+		              <input type="text" name="h_lname_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">First Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" required>
+		              <input type="text" name="m_fname_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Middle Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Middle Name" required>
+		              <input type="text" name="m_mname_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Middle Name" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Last Name</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" required>
+		              <input type="text" name="m_lname_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -411,12 +422,12 @@
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="h_relate_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="m_relate_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -429,37 +440,37 @@
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">House No./St./Bananggay</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="h_street_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">City/Municipality</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="h_city_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Province</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		              <input type="text" name="h_province_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Country</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		              <input type="text" name="h_country_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 	    	</div>
 	    	<div class="col-5 mb-2">
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">House No./St./Bananggay</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="m_street_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 	    			<div class="form-group">
 		              <label for="exampleInputEmail1">City/Municipality</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="m_city_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Province</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		              <input type="text" name="m_province_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 		            <div class="form-group mt-2">
 		              <label for="exampleInputEmail1">Country</label>
-		              <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+		              <input type="text" name="m_country_consent" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
 		            </div>
 	    	</div>
 	    </div>
@@ -482,13 +493,13 @@
 	    	<div class="col mb-2">
 		            <div class="form-group">
 		              <label for="exampleInputEmail1">Office of the/House of/Church of/Mosque of</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="church_name" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 		    <div class="col mb-2">
 		            <div class="form-group">
 		              <label for="exampleInputEmail1">City/Municipality</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="church_city" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 	    </div>
@@ -500,7 +511,7 @@
 	    	<div class="col mb-2">
 		            <div class="form-group">
 		              <label for="exampleInputEmail1">Province</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="church_province" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 	    </div>
@@ -511,7 +522,7 @@
 	    	</div>
 	    	<div class="col mb-2">
 		            <div class="form-group">
-		              <input type="date" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="date" name="date_married" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 	    </div>
@@ -522,7 +533,7 @@
 	    	</div>
 	    	<div class="col mb-2">
 		            <div class="form-group">
-		              <input type="time" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="time" name="time_married" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 	    </div>
@@ -552,19 +563,19 @@
 	    	<div class="col mb-2">
 		            <div class="form-group">
 		            	<label for="exampleInputEmail1">Marriage License No.</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="license_no" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 		    <div class="col mb-2">
 		            <div class="form-group">
 		            	<label for="exampleInputEmail1">Date Issued</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="date" name="issued_on" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 		    <div class="col mb-2">
 		            <div class="form-group">
 		            	<label for="exampleInputEmail1">Location</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="place"  class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 	    </div>
@@ -576,13 +587,13 @@
 	    	<div class="col mb-2">
 		            <div class="form-group">
 		            	<label for="exampleInputEmail1">Name of Solemnizing Officer</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="solemnizing_officer" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 		    <div class="col mb-2">
 		            <div class="form-group">
 		            	<label for="exampleInputEmail1">Position/Designation</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
+		              <input type="text" name="position" class="form-control" id="" aria-describedby="emailHelp" placeholder="" required>
 		            </div>
 		    </div>
 	    </div>
@@ -594,7 +605,7 @@
 		    <div class="col mb-2">
 		            <div class="form-group">
 		            	<label for="exampleInputEmail1">Religion/Religious Sect., Registry No. & Expiration Date</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Leave it Blank if NA" required>
+		              <input type="text" name="sect_no" class="form-control" id="" aria-describedby="emailHelp" placeholder="Leave it Blank if NA" required>
 		            </div>
 		    </div>
 	    </div>
@@ -606,19 +617,19 @@
 		    <div class="col mb-2">
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Witness 1</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="text" name="witness1" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Witness 2</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="text" name="witness2" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Witness 3</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="text" name="witness3" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Witness 4</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="text" name="witness4" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		    </div>
 	    </div>
@@ -630,15 +641,15 @@
 		    <div class="col mb-2">
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Name in Print</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="text" name="received_name" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Title or Position</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="text" name="received_title" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Date</label>
-		              <input type="date" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="date" name="received_date" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		    </div>
 	    </div>
@@ -650,15 +661,15 @@
 		    <div class="col mb-2">
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Name in Print</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="text" name="registrar_name" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Title or Position</label>
-		              <input type="" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="text" name="registrar_title" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		            <div class="form-group mb-2">
 		            	<label for="exampleInputEmail1">Date</label>
-		              <input type="date" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
+		              <input type="date" name="registrar_date" class="form-control" id="" aria-describedby="emailHelp" placeholder="Input Full Name" required>
 		            </div>
 		    </div>
 	    </div>
@@ -666,7 +677,7 @@
 	  </div>
 
 		<div class="card-footer marriage-form-footer d-flex justify-content-center mb-4">
-	    	<button class="btn btn-form-submit">Submit Form</button>
+	    	<button type="submit" name="btnMarriage" class="btn btn-form-submit">Submit Form</button>
 	  	</div>
 
 	</div>

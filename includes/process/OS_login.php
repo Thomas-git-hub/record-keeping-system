@@ -10,11 +10,15 @@
     $query = mysqli_query($conn, $sql);
     $count = mysqli_num_rows($query);
 
-    if($count == 0){
-      header("Location: ../../login/office-staff-login.php?errorLogin");
-    }else{
-      header("Location: ../../views/staff/index.php");
-      session_start();
+    if($query) {
+      if($count == 0){
+        header("Location: ../../login/office-staff-login.php?errorLogin");
+      }else{
+        header("Location: ../../views/staff/index.php");
+        session_start();
+      }
+    }else {
+      echo mysqli_error($conn);
     }
   }
 
