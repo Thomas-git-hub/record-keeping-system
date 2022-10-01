@@ -1,35 +1,68 @@
 body{
-
 	overflow-x: hidden;
+	/*overflow-y: hidden;*/
 }
 
-.fix-navbar{
-	background-color: #DBCBBE;
-}
-
-.nav-a-title{
-	color: #fff;
+.announcement{
 	text-decoration: none;
-	padding: 8px;
+	color: #6d5b4b;
+	font-weight: bold;
 }
 
-.nav-a-title:hover{
-	color: #000;
+.announcement:hover{
 	text-decoration: none;
-	background-color: #f8f5f2;
-	border-radius: 10px;
+	color: #262626;
+	border-bottom: 1px solid#262626;
+}
+
+.event{
+	text-decoration: none;
+	color: #6d5b4b;
+	font-weight: bold;
+}
+
+.event:hover{
+	text-decoration: none;
+	color: #262626;
+	border-bottom: 1px solid #262626;
 }
 
 .row-content{
-	margin-top: 58px;
+	margin-top: 20px;
 }
 
 .left-con{
 	/*border-right: 1px solid #dbcbbe;*/
 }
 
+.alert-success{
+	font-size: 18px;
+}
+
+.alert-danger{
+	font-size: 18px;
+}
+
+.btn-secondary{
+	background-color: #c5ac97;
+	border: none;
+}
+
+.btn-secondary:hover{
+	background-color: #6d5b4b;
+}
+
+.card{
+	box-shadow: 7px 10px 17px 0px rgba(0,0,0,0.16);
+	-webkit-box-shadow: 7px 10px 17px 0px rgba(0,0,0,0.16);
+	-moz-box-shadow: 7px 10px 17px 0px rgba(0,0,0,0.16);}
+
+.card-header{
+	background-color: #dbcbbe;
+}
+
 .mid-con{
-  	padding: 15px;
+  	padding: 22px;
   	width: 50%;
   	height: 720px;
   	overflow: scroll;
@@ -46,6 +79,7 @@ body{
 }
 
 .right-con{
+	/*border-left: 1px solid #dbcbbe;*/
 	height: 720px;
   	overflow: scroll;
 }
@@ -60,10 +94,13 @@ body{
   scrollbar-width: none;  /* Firefox */
 }
 
-
-/*announcement css*/
+.bx-calendar-star{
+	color: #fff;
+	font-size: 30px;
+}
 
 .bx-news{
+	color: #fff;
 	font-size: 30px;
 }
 

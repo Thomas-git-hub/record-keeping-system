@@ -22,30 +22,35 @@
   <link rel="stylesheet" type="text/css" href="css/landing.css">
 
 <body>
-<?php include_once("includes/navbar.php") ?>
+  <?php include_once("includes/navbar.php") ?>
 
-<div class="container">
+<div class="container-fluid">
 
 <div class="row row-content">
 
-<div class="col-3 left-con">
+<div class="d-flex justify-content-center mb-3">
+  <a href="index.php?page=announcement" class="announcement mx-5">ANNOUNCEMENT</a>
+  <a href="index.php?page=events" class="event mx-5">EVENTS</a>
+</div>
+
+<div class="col-3 left-con mx-3">
   <?php include_once("left-content.php") ?>
 </div>
 
-
-<div class="col mid-con p-5">
-<?php 
-if (isset($_GET['page']) && $_GET['page'] == "announcement") {
-  include_once("announcement.php");
-}
-else if (isset($_GET['page']) && $_GET['page'] == "events") {
-  include_once("events.php");
-}
-?>
+<div class="col mid-con px-5">
+  <?php 
+  if (isset($_GET['page']) && $_GET['page'] == "announcement") {
+    include_once("announcement.php");
+  }
+  else if (isset($_GET['page']) && $_GET['page'] == "events") {
+    include_once("events.php");
+  }
+  else{
+  }
+  ?>
 </div>
 
-
-<div class="col-3 right-con">
+<div class="col-3 right-con mx-3">
   <?php include_once("right-content.php") ?>
 </div>
 
