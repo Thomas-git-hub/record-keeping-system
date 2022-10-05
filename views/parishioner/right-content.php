@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row mb-5">
     <div class="d-flex flex-column">
       <h5 class="mt-4">Schedule of Mass</h5>
       <table class="table mt-3">

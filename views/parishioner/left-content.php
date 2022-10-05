@@ -1,4 +1,14 @@
       
+        
+        <!-- FOR ALERT BOX -->
+
+        <div class="alert alert-success" role="alert">
+          Request Sent! <i class='bx bx-check-double'></i>
+        </div>
+        <!-- <div class="alert alert-danger" role="alert">
+          Failed <i class='bx bx-message-square-error'></i>
+        </div> -->
+
       <h5 class="mt-4">Request Baptismal Certificate</h5>    
 
       <small id="emailHelp" class="form-text text-muted mt-4" style="font-size: 12px;">Please enter the Name <small>(Child Name)</small> of the person who is going to receive the certificate</small>
@@ -23,7 +33,7 @@
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Purpose</label>
-            <textarea class="form-control" id="" rows="3"></textarea>
+            <textarea type="" class="form-control" id="" placeholder="" rows="1"></textarea>
           </div>
           <button type="submit" class="btn btn-secondary btn-block">Submit</button>
         </div>

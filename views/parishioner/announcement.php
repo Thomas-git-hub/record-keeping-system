@@ -72,6 +72,6 @@
 	  </div>
 	</div>
 
-	<p class="d-flex justify-content-center text-muted mt-5" style="font-size: 12px;">End of Feed</p>
+	<p class="d-flex justify-content-center text-muted mt-3 mb-5" style="font-size: 12px;">End of Feed</p>
 
 </div>
