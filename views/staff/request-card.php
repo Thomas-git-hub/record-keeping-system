@@ -49,11 +49,11 @@
 		    Request Details
 		  </div>
 		  <div class="card-body">
-		    <h6 class="mt-3">Name:&nbsp;<b>Thomas Allene</b></h6>
+		  	<h6 class="mb-4" style="font-size: 13px;">Date of Request:&nbsp;<b>09/22/2022</b></h6>
+		    <h6 class="mt-3">Name of Child:&nbsp;<b>Thomas Allene</b></h6>
 		    <h6 class="mt-3">Fathers Name:&nbsp;<b>Thomas</b></h6>
 		    <h6 class="mt-3">Mothers Name:&nbsp;<b>Allene</b></h6>
 		    <h6 class="mt-3">Year of Baptism:&nbsp;<b>09/22/2017</b></h6>
-		    <h6 class="mt-4">Date of Request:&nbsp;<b>09/22/2022</b></h6>
 		    <h6 class="mt-3">Type of Request:&nbsp;<b>Baptismal</b></h6>
 		    <h6 class="mt-4">Message/Purpose:</h6>
 		    <textarea class="form-control" readonly>Test message a b c d</textarea>
@@ -68,7 +68,7 @@
 				<table id="datatable" class="table display" >
 			        <thead>
 			            <tr>
-			                <th>Name</th>
+			                <th>Name of Child</th>
 			                <th>Fathers Name</th>
 			                <th>Mothers Name</th>
 			                <th>Birthdate</th>
@@ -92,12 +92,15 @@
 								<button class="btn btn-print" data-toggle="tooltip" data-placement="top" title="P R I N T">
 									<i class='bx bxs-printer' ></i>
 								</button>
+								<button class="btn btn-send" data-toggle="tooltip" data-placement="top" title="S E N D">
+									<i class='bx bxs-send'></i>
+								</button>
 							</td>
 			            </tr>
 			        </tbody>
 			        <tfoot>
 			            <tr>
-			                <th>Name</th>
+			                <th>Name of Child</th>
 			                <th>Fathers Name</th>
 			                <th>Mothers Name</th>
 			                <th>Birthdate</th>
@@ -109,11 +112,11 @@
 			    </table>
 			</div>
 
-			<div class="row mt-4 mb-4">
+			<!-- <div class="row mt-4 mb-4">
 				<div class="col d-flex justify-content-center">
 					<button class="btn btn-secondary" style="width: 80%;">Send Document</button>
 				</div>
-			</div>
+			</div> -->
 
 		  </div>
 		</div>

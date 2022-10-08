@@ -53,7 +53,7 @@
 	     </div>
 	  </div>
 	  <div class="col d-flex justify-content-end">
-	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="document.location='https://localhost/record-keeping-system/views/staff/baptismal-form.php'">Create Baptismal</button>
+	    <button type="button" class="btn btn-create-baptismal mr-3" onclick="document.location='http://localhost/record-keeping-system/views/staff/baptismal-form.php'">Create Baptismal</button>
 	  </div>
 	</div>  
 	
@@ -61,7 +61,7 @@
 			<table id="datatable" class="table display" >
 		        <thead>
 		            <tr>
-		                <th>Name</th>
+		                <th>Name of Child</th>
 		                <th>Fathers Name</th>
 		                <th>Mothers Name</th>
 		                <th>Birthdate</th>
@@ -112,7 +112,7 @@
 		        </tbody>
 		        <tfoot>
 		            <tr>
-		                <th>Name</th>
+		                <th>Name of Child</th>
 		                <th>Fathers Name</th>
 		                <th>Mothers Name</th>
 		                <th>Birthdate</th>

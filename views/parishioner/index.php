@@ -31,6 +31,21 @@
 <div class="d-flex justify-content-center mb-3">
   <a href="index.php?page=announcement" class="announcement mx-5">ANNOUNCEMENT</a>
   <a href="index.php?page=events" class="event mx-5">EVENTS</a>
+
+  <div class="dropdown d-flex justify-content-end mx-5">
+    <a class="notification-dropdown dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class='bx bxs-bell'></i>
+      <span class="badge badge-pill badge-danger" style="font-size: 10px;">new</span>
+    </a>
+    <div class="dropdown-container dropdown-menu p-3" aria-labelledby="dropdownMenu2" style="width: 400px;">
+      <h5 class="mb-3" style="color: #fff;">Notification</h5>
+      <p style="border-bottom: 1px solid #000; color: #fff; font-size: 12px;"><i class='bx bxs-envelope'>&nbsp;</i>Baptismal Certificate is already sent to your email</p>
+      <p style="border-bottom: 1px solid #000; color: #fff; font-size: 12px;"><i class='bx bxs-envelope'>&nbsp;</i>Baptismal Certificate is already sent to your email</p>
+      <p style="border-bottom: 1px solid #000; color: #fff; font-size: 12px;"><i class='bx bxs-envelope'>&nbsp;</i>Baptismal Certificate is already sent to your email</p>
+      <p style="border-bottom: 1px solid #000; color: #fff; font-size: 12px;"><i class='bx bxs-envelope'>&nbsp;</i>Baptismal Certificate is already sent to your email</p>
+    </div>
+  </div>
+
 </div>
 
 <div class="col-3 left-con mx-3">
@@ -46,6 +61,13 @@
     include_once("events.php");
   }
   else{
+    echo "Welcome to St. Peter and Paul Record Keeping System.";
+    echo "<br><br>";
+    echo "Start your feed by Clicking Announcement or Events at the TOP part of your screen.";
+    echo "<br><br>";
+    echo "You can send Request of Baptismal at the LEFT part of your screen. Schedule of Mass are showed at the RIGHT part of your screen.";
+    echo "<br><br>";
+    echo "ENJOY!";
   }
   ?>
 </div>

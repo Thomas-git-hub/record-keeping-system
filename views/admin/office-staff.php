@@ -40,10 +40,9 @@
 
 	<div class="row mt-5 mb-3">
 	  <div class="col d-flex justify-content-end">
-	    <button type="button" class="btn btn-generate-report mr-3" data-toggle="modal" data-target="#addStaff" data-toggle="tooltip" data-placement="left" title="Add New Staff Account">
+	    <button type="button" class="btn btn-generate-report mr-3 mx-3" data-toggle="modal" data-target="#addStaff" data-toggle="tooltip" data-placement="left" title="Add New Staff Account">
 	    	<i class='bx bxs-user-plus'></i>
 	    </button>
-	    <button type="button" class="btn btn-generate-report mr-3 mx-3" id="" data-toggle="tooltip" data-placement="left" title="Generate Report"><i class='bx bxs-file-pdf'></i></button>
 	  </div>
 	</div>  
 	
@@ -90,16 +89,6 @@
 									}
 								}
 							?>
-		            <tr>
-		            	<td>John Doe</td>
-		                <td>Polangui Albay</td>
-		                <td>09156748575</td>
-		                <td>email@email.com</td>
-		                <td>*****</td>
-						<td>
-							
-						</td>
-		            </tr>
 		        </tbody>
 		        <tfoot>
 		            <tr>
